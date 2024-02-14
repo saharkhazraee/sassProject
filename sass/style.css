@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav #offer-box {
+  font-size: 0.75rem;
+  color: #333333;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-weight: 400;
+}
+nav #offer-box p > a {
+  font-size: 0.75rem;
+  color: #333333;
+  text-decoration: underline;
+  font-weight: 400;
+}
+nav #nav-bar {
+  height: 80px;
+  background-color: #FDFBF7;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #nav-bar > ul {
+  display: flex;
+  gap: 25px;
+}
+nav #nav-bar > ul li > a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.09rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+}
+nav #nav-bar > ul li > a > i {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.09rem;
+}
+nav #nav-bar > ul li > a > i:hover {
+  border-bottom: 1px solid transparent;
+  opacity: 0.5;
+}
+nav #nav-bar ul:nth-of-type(1) > li > a:hover {
+  border-bottom: 1px solid black;
+}
+nav #nav-bar ul:nth-of-type(2) > li:nth-of-type(1) > a:nth-of-type(1):hover {
+  border-bottom: 1px solid black;
+}
+nav #nav-bar > div {
+  width: 40px;
+  height: 50px;
+}
+nav #nav-bar > div > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+nav #nav-bar > div > a > svg {
+  width: 100%;
+  height: 100%;
+}
+nav #nav-bar > div > a > svg:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
