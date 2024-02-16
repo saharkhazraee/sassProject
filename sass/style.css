@@ -94,10 +94,17 @@ nav #nav-bar > div > a > svg:hover {
   overflow: hidden;
   position: relative;
 }
+#slider-sec #slider-box .show_slider {
+  transition: all 0.5s ease-out;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 #slider-sec #slider-box .slider {
   position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
 }
 #slider-sec #slider-box .slider > div:first-of-type {
   width: 100%;
@@ -147,8 +154,12 @@ nav #nav-bar > div > a > svg:hover {
   color: #D9DAC8;
   opacity: 0.5;
 }
+#slider-sec #slider-number #slider-num .slider-index-show {
+  color: white !important;
+  opacity: 1 !important;
+}
 #slider-sec #slider-number #line-slider {
-  width: 100%;
+  width: 0px;
   height: 2px;
   margin-top: 20px;
   background-color: white;
