@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-header nav#navbar-sec .fixed-top {
+header .fixed-top {
   position: fixed;
   top: 0;
   left: 0;
