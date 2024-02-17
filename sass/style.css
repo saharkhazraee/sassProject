@@ -236,6 +236,7 @@ nav #nav-bar > div > a > svg:hover {
 #shop-sec #shop-slider .slide a img {
   width: 90%;
   margin-top: 3em;
+  object-fit: cover;
 }
 
 main {
