@@ -13,7 +13,13 @@ a {
   text-decoration: none;
 }
 
-nav #offer-box {
+header nav#navbar-sec .fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header nav#navbar-sec #offer-box {
   font-size: 0.75rem;
   color: #333333;
   background-color: white;
@@ -23,13 +29,13 @@ nav #offer-box {
   padding: 10px 0px;
   font-weight: 400;
 }
-nav #offer-box p > a {
+header nav#navbar-sec #offer-box p > a {
   font-size: 0.75rem;
   color: #333333;
   text-decoration: underline;
   font-weight: 400;
 }
-nav #nav-bar {
+header nav#navbar-sec #nav-bar {
   height: 80px;
   background-color: #FDFBF7;
   padding: 0 5%;
@@ -38,11 +44,11 @@ nav #nav-bar {
   justify-content: space-between;
   align-items: center;
 }
-nav #nav-bar > ul {
+header nav#navbar-sec #nav-bar > ul {
   display: flex;
   gap: 25px;
 }
-nav #nav-bar > ul li > a {
+header nav#navbar-sec #nav-bar > ul li > a {
   font-size: 0.75rem;
   font-weight: 500;
   color: #333333;
@@ -50,72 +56,71 @@ nav #nav-bar > ul li > a {
   border-bottom: 1px solid transparent;
   transition: all 0.5s ease-in;
 }
-nav #nav-bar > ul li > a > i {
+header nav#navbar-sec #nav-bar > ul li > a > i {
   font-size: 1rem;
   font-weight: 500;
   color: #333333;
   letter-spacing: 0.09rem;
 }
-nav #nav-bar > ul li > a > i:hover {
+header nav#navbar-sec #nav-bar > ul li > a > i:hover {
   border-bottom: 1px solid transparent;
   opacity: 0.5;
 }
-nav #nav-bar ul:nth-of-type(1) > li > a:hover {
+header nav#navbar-sec #nav-bar ul:nth-of-type(1) > li > a:hover {
   border-bottom: 1px solid black;
 }
-nav #nav-bar ul:nth-of-type(2) > li:nth-of-type(1) > a:nth-of-type(1):hover {
+header nav#navbar-sec #nav-bar ul:nth-of-type(2) > li:nth-of-type(1) > a:nth-of-type(1):hover {
   border-bottom: 1px solid black;
 }
-nav #nav-bar > div {
+header nav#navbar-sec #nav-bar > div {
   width: 40px;
   height: 50px;
 }
-nav #nav-bar > div > a {
+header nav#navbar-sec #nav-bar > div > a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-nav #nav-bar > div > a > svg {
+header nav#navbar-sec #nav-bar > div > a > svg {
   width: 100%;
   height: 100%;
 }
-nav #nav-bar > div > a > svg:hover {
+header nav#navbar-sec #nav-bar > div > a > svg:hover {
   opacity: 0.7;
 }
-
-#slider-sec {
+header #slider-sec {
   width: 100%;
   height: 90vh;
   position: relative;
 }
-#slider-sec #slider-box {
+header #slider-sec #slider-box {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-#slider-sec #slider-box .show_slider {
+header #slider-sec #slider-box .show_slider {
   transition: all 0.5s ease-out;
   opacity: 1 !important;
   visibility: visible !important;
 }
-#slider-sec #slider-box .slider {
+header #slider-sec #slider-box .slider {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
   visibility: hidden;
 }
-#slider-sec #slider-box .slider > div:first-of-type {
+header #slider-sec #slider-box .slider > div:first-of-type {
   width: 100%;
   height: 100%;
 }
-#slider-sec #slider-box .slider > div:first-of-type img {
+header #slider-sec #slider-box .slider > div:first-of-type img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#slider-sec #slider-box .slider > div:nth-of-type(2) {
+header #slider-sec #slider-box .slider > div:nth-of-type(2) {
   position: absolute;
   width: 50%;
   top: 50%;
@@ -123,62 +128,64 @@ nav #nav-bar > div > a > svg:hover {
   transform: translateY(-50%);
   color: white;
 }
-#slider-sec #slider-box .slider > div:nth-of-type(2) h2 {
+header #slider-sec #slider-box .slider > div:nth-of-type(2) h2 {
   font-size: 1.9em;
   margin-bottom: 15px;
 }
-#slider-sec #slider-box .slider > div:nth-of-type(2) p {
+header #slider-sec #slider-box .slider > div:nth-of-type(2) p {
   font-size: 1.1em;
   margin-bottom: 40px;
 }
-#slider-sec #slider-box .slider > div:nth-of-type(2) a {
+header #slider-sec #slider-box .slider > div:nth-of-type(2) a {
   color: #333333;
   font-size: 0.75rem;
   padding: 15px 8%;
   background-color: white;
 }
-#slider-sec #slider-number {
+header #slider-sec #slider-number {
   position: absolute;
   width: 8%;
   bottom: 10%;
   right: 5%;
 }
-#slider-sec #slider-number #slider-num {
+header #slider-sec #slider-number #slider-num {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-#slider-sec #slider-number #slider-num div {
+header #slider-sec #slider-number #slider-num div {
   font-size: 0.75rem;
   color: #D9DAC8;
   opacity: 0.5;
 }
-#slider-sec #slider-number #slider-num .slider-index-show {
+header #slider-sec #slider-number #slider-num .slider-index-show {
   color: white !important;
   opacity: 1 !important;
 }
-#slider-sec #slider-number #line-slider {
+header #slider-sec #slider-number #line-slider {
   width: 0px;
   height: 2px;
   margin-top: 20px;
   background-color: white;
 }
 
+main {
+  position: relative;
+}
 main #vertical-bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: fixed;
   right: 0;
-  top: 30%;
+  top: 0;
   width: 50px;
   background-color: #545454;
   color: white;
   line-height: 1.6em;
   font-size: 0.9em;
   padding: 20px 10px;
-  margin-top: 200px;
 }
 main #shop-sec {
   width: 100%;

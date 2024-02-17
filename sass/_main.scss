@@ -1,19 +1,20 @@
 // start vertical-bar
 main {
+    position: relative;
     #vertical-bar {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: sticky;
+        position: fixed;
         right: 0;
-        top: 30%;
+        top: 0;
         width: 50px;
         background-color: #545454;
         color: white;
         line-height: 1.6em;
         font-size: 0.9em;
         padding: 20px 10px;
-        margin-top: 200px;
+        // margin-top: 200px;
         // z-index: 10000;
     }
 
