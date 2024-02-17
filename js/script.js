@@ -45,3 +45,23 @@ function autoSlider() {
 let play = setInterval(autoSlider, 5000);
 // end auto slider
 // end slider
+// start main
+// start shop sec
+const prevArrowEl=document.querySelector('#prev-arrow');
+const nextArrowEl=document.querySelector('#next-arrow');
+const shopSliderEl=document.querySelector('#shop-slider');
+const maxScroolLeft=shopSliderEl.scrollWidth-shopSliderEl.clientWidth;
+nextArrowEl.addEventListener('click',() => {
+    shopSliderEl.scrollLeft +=300;
+    if(shopSliderEl.scrollLeft>maxScroolLeft){
+        shopSliderEl.scrollLeft -=maxScroolLeft
+    }else{
+        shopSliderEl.scrollLeft +=300;
+    }
+    
+ })
+
+// end shop sec
+
+
+// end main

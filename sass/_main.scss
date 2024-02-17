@@ -73,6 +73,15 @@
                 }
             }
         }
+        
+    }
+    #shop-slider::-webkit-scrollbar-thumb{
+        opacity: 0;
+        visibility: hidden;
+    }
+    #shop-slider::-webkit-scrollbar{
+        opacity: 0;
+        visibility: hidden;
     }
 }
 

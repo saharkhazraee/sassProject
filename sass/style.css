@@ -238,6 +238,14 @@ nav #nav-bar > div > a > svg:hover {
   margin-top: 3em;
   object-fit: cover;
 }
+#shop-sec #shop-slider::-webkit-scrollbar-thumb {
+  opacity: 0;
+  visibility: hidden;
+}
+#shop-sec #shop-slider::-webkit-scrollbar {
+  opacity: 0;
+  visibility: hidden;
+}
 
 main {
   height: 10000px;
