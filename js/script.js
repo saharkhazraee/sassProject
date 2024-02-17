@@ -9,7 +9,7 @@ let slideIndex = 0;
 let width = 0;
     let autoProgressBar = setInterval(progressBar, sliderNumberEl.getBoundingClientRect().width / 5000);
     function progressBar() {
-        console.log(sliderNumberEl.getBoundingClientRect().width)
+        // console.log(sliderNumberEl.getBoundingClientRect().width)
         if (width > sliderNumberEl.getBoundingClientRect().width) {
             clearInterval(autoProgressBar)
         } else {
@@ -22,7 +22,7 @@ function autoSlider() {
     let width = 1;
     let autoProgressBar = setInterval(progressBar, sliderNumberEl.getBoundingClientRect().width / 5000);
     function progressBar() {
-        console.log(sliderNumberEl.getBoundingClientRect().width)
+        // console.log(sliderNumberEl.getBoundingClientRect().width)
         if (width > sliderNumberEl.getBoundingClientRect().width) {
             clearInterval(autoProgressBar)
         } else {
@@ -31,11 +31,11 @@ function autoSlider() {
         }
     }
     // end  dynamic progress bar
-    console.log(slideIndex)
+    // console.log(slideIndex)
     sliderEl[slideIndex].classList.remove('show_slider');
     sliderIndexEl[slideIndex].classList.remove('slider-index-show');
     slideIndex++
-    console.log(slideIndex)
+    // console.log(slideIndex)
     if (slideIndex >= sliderEl.length) {
         slideIndex = 0
     }
@@ -50,13 +50,34 @@ let play = setInterval(autoSlider, 5000);
 const prevArrowEl=document.querySelector('#prev-arrow');
 const nextArrowEl=document.querySelector('#next-arrow');
 const shopSliderEl=document.querySelector('#shop-slider');
+const slideEl=document.querySelectorAll('.slide');
 const maxScroolLeft=shopSliderEl.scrollWidth-shopSliderEl.clientWidth;
+
 nextArrowEl.addEventListener('click',() => {
-    shopSliderEl.scrollLeft +=300;
-    if(shopSliderEl.scrollLeft>maxScroolLeft){
-        shopSliderEl.scrollLeft -=maxScroolLeft
+    shopSliderEl.scrollLeft +=slideEl[0].clientWidth;
+    console.log(shopSliderEl.scrollLeft,'hi')
+    console.log(shopSliderEl.clientWidth,'bye')
+    console.log(shopSliderEl.scrollWidth,'hh')
+    if(shopSliderEl.scrollLeft>=maxScroolLeft-1){
+       nextArrowEl.style.display='none';
+       prevArrowEl.style.display='inline-block'
     }else{
-        shopSliderEl.scrollLeft +=300;
+        nextArrowEl.style.display='inline-block';
+        prevArrowEl.style.display='inline-block'
+    }
+    
+ })
+ prevArrowEl.addEventListener('click',() => {
+    shopSliderEl.scrollLeft -=slideEl[0].clientWidth;
+    console.log(shopSliderEl.scrollLeft,'hi')
+    console.log(shopSliderEl.clientWidth,'bye')
+    console.log(shopSliderEl.scrollWidth,'hh')
+    if(shopSliderEl.scrollLeft< 10   ){
+       prevArrowEl.style.display='none';
+       nextArrowEl.style.display='inline-block';
+    }else{
+        prevArrowEl.style.display='inline-block';
+        nextArrowEl.style.display='inline-block';
     }
     
  })
