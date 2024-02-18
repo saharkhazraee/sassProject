@@ -1,0 +1,142 @@
+footer {
+    width: 100%;
+    background-color: #333333;
+    padding: 80px 8%;
+    border-bottom: 2px solid white;
+    padding-bottom: 30px !important;
+
+    h2 {
+        color: $textPrimaryColor;
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 70px;
+        letter-spacing: 0.1em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    >div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >div:first-of-type {
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            >ul>li {
+                padding: 10px 0;
+                color: $textPrimaryColor;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 0.9em;
+                font-weight: 500;
+
+                >a {
+                    color: $textPrimaryColor;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            }
+
+            >ul>li:first-of-type {
+                font-size: 1.1em;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+        }
+
+        >div:nth-of-type(2) {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+
+            h3 {
+                color: $textPrimaryColor;
+                font-size: 1.1em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                letter-spacing: 0.1em;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 0.9em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: $textPrimaryColor;
+                line-height: 1.4em;
+                text-align: justify;
+            }
+
+            >div {
+                width: 100%;
+
+                >div:first-of-type {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid white;
+
+
+                    >input {
+                        width: 90%;
+                        background-color: transparent;
+                        border: none;
+                        color: $textPrimaryColor;
+                        padding: 10px 0px;
+                        outline: none;
+
+                        &:focus {
+                            border: 1px solid blue;
+                        }
+                    }
+
+                    >a {
+                        width: 10%;
+
+                        >i {
+
+                            color: $textPrimaryColor;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+
+                >div:nth-of-type(2) {
+                    width: 100%;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+
+                    >a {
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        color: $textPrimaryColor;
+                        font-size: 0.8em;
+                        letter-spacing: 0.2em;
+                        border-bottom: 1px solid transparent;
+                        &:hover{
+                            border-bottom: 1px solid white;
+                        }
+                    }
+                }
+                >div:nth-of-type(3){
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 5px;
+                    >i{
+                        color: $textPrimaryColor;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -566,6 +566,128 @@ main #brew-guides > div > div > div a:hover {
   border-bottom: 1px solid black;
 }
 
+footer {
+  width: 100%;
+  background-color: #333333;
+  padding: 80px 8%;
+  border-bottom: 2px solid white;
+  padding-bottom: 30px !important;
+}
+footer h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 70px;
+  letter-spacing: 0.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div > div:first-of-type {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer > div > div:first-of-type > ul > li {
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+footer > div > div:first-of-type > ul > li > a {
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer > div > div:first-of-type > ul > li:first-of-type {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+footer > div > div:nth-of-type(2) {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer > div > div:nth-of-type(2) h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+footer > div > div:nth-of-type(2) p {
+  font-size: 0.9em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.4em;
+  text-align: justify;
+}
+footer > div > div:nth-of-type(2) > div {
+  width: 100%;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type > input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 0px;
+  outline: none;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type > input:focus {
+  border: 1px solid blue;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type > a {
+  width: 10%;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type > a > i {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid transparent;
+}
+footer > div > div:nth-of-type(2) > div > div:nth-of-type(2) > a:hover {
+  border-bottom: 1px solid white;
+}
+footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > i {
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+}
+
 body {
   background-color: #FDFBF7;
 }/*# sourceMappingURL=style.css.map */
