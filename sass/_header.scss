@@ -1,12 +1,18 @@
 // start offer box
 header {
-    .fixed-top{
-        position: fixed;
+    // .fixed-top{
+       
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
+    nav#navbar-sec {
+        position: sticky;
         top: 0;
         left: 0;
         right: 0;
-    }
-    nav#navbar-sec {
+        z-index: 1000;
         #offer-box {
             font-size: 0.75rem;
             color: $textColor;

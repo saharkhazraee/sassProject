@@ -6,12 +6,12 @@ const sliderSecEl=document.querySelector('#slider-sec');
 // if(sliderSecEl.getBoundingClientRect().bottom>navBarEl.getBoundingClientRect().height){
 // navBarEl.style.position='none'
 // }
-window.addEventListener('scroll',() => { 
-    console.log(sliderSecEl.getBoundingClientRect().bottom)
-    console.log(window.innerHeight*0.8)
-    sliderSecEl.getBoundingClientRect().bottom>window.innerHeight*0.8?
-    navBarEl.classList.add("fixed-top"):navBarEl.classList.remove("fixed-top");
- })
+// window.addEventListener('scroll',() => { 
+//     console.log(sliderSecEl.getBoundingClientRect().bottom)
+//     console.log(window.innerHeight*0.8)
+//     sliderSecEl.getBoundingClientRect().bottom>window.innerHeight*0.8?
+//     navBarEl.classList.add("fixed-top"):navBarEl.classList.remove("fixed-top");
+//  })
 // end navbar
 // start slider
 // start auto slider

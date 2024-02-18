@@ -1,13 +1,13 @@
 // start vertical-bar
 main {
-    position: relative;
+    background-color: $mainBgColor;
     #vertical-bar {
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
         right: 0;
-        top: 0;
+        top: 50%;
         width: 50px;
         background-color: #545454;
         color: white;
@@ -15,7 +15,7 @@ main {
         font-size: 0.9em;
         padding: 20px 10px;
         // margin-top: 200px;
-        // z-index: 10000;
+        z-index: 10000;
     }
 
     // end vertical-bar
@@ -24,6 +24,7 @@ main {
         width: 100%;
         margin: 100px 0;
         position: relative;
+
 
         .arrow {
             position: absolute;
@@ -98,6 +99,51 @@ main {
         }
     }
 
-
     // end shop-sec
+    // start mug sec
+    #mug-sec {
+        width: 100%;
+        height: 120vh;
+        background-image: url(../assets/image/mug-sec.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        >div {
+            width: 28%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color:$textPrimaryColor;
+            
+            
+            h2{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 1.6em;
+                font-weight: 500;
+                margin-bottom: 30px ;
+            }
+           p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.3em;
+            line-height: 1.3em;
+            margin-bottom: 40px;
+           }
+           a{
+            color: $textColor;
+            font-size: 0.95em;
+            font-weight: 400;
+            padding: 15px 150px;
+            background-color: $textPrimaryColor;
+           }
+        }
+    }
+
+    // end mug sec
 }

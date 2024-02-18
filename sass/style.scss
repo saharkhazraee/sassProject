@@ -1,2 +1,4 @@
 @import '_normalization','_variables','_header','_main';
-
+body{
+    background-color: $mainBgColor;
+}

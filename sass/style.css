@@ -13,11 +13,12 @@ a {
   text-decoration: none;
 }
 
-header .fixed-top {
-  position: fixed;
+header nav#navbar-sec {
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 header nav#navbar-sec #offer-box {
   font-size: 0.75rem;
@@ -171,7 +172,7 @@ header #slider-sec #slider-number #line-slider {
 }
 
 main {
-  position: relative;
+  background-color: #FDFBF7;
 }
 main #vertical-bar {
   display: flex;
@@ -179,13 +180,14 @@ main #vertical-bar {
   align-items: center;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 50%;
   width: 50px;
   background-color: #545454;
   color: white;
   line-height: 1.6em;
   font-size: 0.9em;
   padding: 20px 10px;
+  z-index: 10000;
 }
 main #shop-sec {
   width: 100%;
@@ -251,4 +253,48 @@ main #shop-sec #shop-slider::-webkit-scrollbar-thumb {
 main #shop-sec #shop-slider::-webkit-scrollbar {
   opacity: 0;
   visibility: hidden;
+}
+main #mug-sec {
+  width: 100%;
+  height: 120vh;
+  background-image: url(../assets/image/mug-sec.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+main #mug-sec > div {
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+}
+main #mug-sec > div h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+main #mug-sec > div p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 40px;
+}
+main #mug-sec > div a {
+  color: #333333;
+  font-size: 0.95em;
+  font-weight: 400;
+  padding: 15px 150px;
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: #FDFBF7;
 }/*# sourceMappingURL=style.css.map */
