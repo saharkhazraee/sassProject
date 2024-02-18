@@ -169,6 +169,10 @@ header {
                         font-size: $fontSize;
                         padding: 15px 8%;
                         background-color: white;
+                        transition: all 0.1s ease-in;
+                        &:hover{
+                            background-color: $bgHoverButton !important;
+                        }
 
                     }
 

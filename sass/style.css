@@ -142,6 +142,10 @@ header #slider-sec #slider-box .slider > div:nth-of-type(2) a {
   font-size: 0.75rem;
   padding: 15px 8%;
   background-color: white;
+  transition: all 0.1s ease-in;
+}
+header #slider-sec #slider-box .slider > div:nth-of-type(2) a:hover {
+  background-color: #E4D6BD !important;
 }
 header #slider-sec #slider-number {
   position: absolute;
@@ -293,6 +297,72 @@ main #mug-sec > div a {
   font-weight: 400;
   padding: 15px 150px;
   background-color: rgb(255, 255, 255);
+  transition: all 0.1s ease-in;
+}
+main #mug-sec > div a:hover {
+  background-color: #E4D6BD !important;
+}
+main #Blue-Bottle-Coffee-sec {
+  width: 100%;
+  height: 150vh;
+  background-color: #F9F6F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 8%;
+}
+main #Blue-Bottle-Coffee-sec > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main #Blue-Bottle-Coffee-sec > div > div:first-of-type {
+  margin-bottom: 40px;
+}
+main #Blue-Bottle-Coffee-sec > div > div:first-of-type h2 {
+  color: black;
+  font-weight: 400;
+  font-size: 1.4em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+}
+main #Blue-Bottle-Coffee-sec > div > div:first-of-type p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.9em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.4em;
+}
+main #Blue-Bottle-Coffee-sec > div > div:nth-of-type(2) > div h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 12px;
+}
+main #Blue-Bottle-Coffee-sec > div > div:nth-of-type(2) > div p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.9em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.4em;
+  margin-bottom: 25px;
+}
+main #Blue-Bottle-Coffee-sec > div > a {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding: 15px 100px;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+main #Blue-Bottle-Coffee-sec img {
+  width: 52%;
+  height: 100%;
+  object-fit: cover;
 }
 
 body {
