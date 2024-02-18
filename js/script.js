@@ -97,6 +97,43 @@ nextArrowEl.addEventListener('click',() => {
  })
 
 // end shop sec
+// start Tribune Tower sec
+let swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+// const swiperSlide=document.querySelectorAll('.swiper-slide');
+// const buttonNext=document.querySelector('.swiper-button-next');
+// const buttonPrev=document.querySelector('.swiper-button-prev');
+//   let swiperIndexSlide=0;
+//   swiperSlide[0].addEventListener('mouseenter',() => {
+//     buttonNext.style.transform='translateX(-100%)';
+//     // buttonPrev.style.display='none';
+//   })
+  
+// //   swiperSlide[0].addEventListener('mouseleave',() => {
+// //     buttonNext.style.transform='translateX(150%)';
+// //     buttonPrev.style.display='none';
+// //   })
+//   swiperSlide[1].addEventListener('mouseenter',() => {
+//     // buttonNext.style.transform='translateX(-100%)';
+//     buttonPrev.style.transform='translateX(100%)';
 
+//   })
+// //   swiperSlide[1].addEventListener('mouseleave',() => {
+// //     buttonNext.style.display='none';
+// //     buttonPrev.style.display='none';
+// //   })
+// //   swiperSlide[2].addEventListener('mouseenter',() => {
+// //     buttonNext.style.display='none';
+// //     buttonPrev.style.display='inline-block';
+// //   })
+// //   swiperSlide[2].addEventListener('mouseleave',() => {
+// //     buttonNext.style.display='none';
+// //     buttonPrev.style.display='none';
+// //   })
 
+// end Tribune Tower sec
 // end main
