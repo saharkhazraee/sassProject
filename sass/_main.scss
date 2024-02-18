@@ -176,7 +176,7 @@ main {
                 margin-bottom: 40px;
 
                 h2 {
-                    color: black;
+                    color: $textBlackColor;
                     font-weight: 400;
                     font-size: 1.4em;
                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -220,6 +220,9 @@ main {
                 background-color: white;
                 border: 1px solid black;
                 margin-top: 10px;
+                &:hover{
+                    opacity: 0.6;
+                }
             }
         }
 
@@ -229,6 +232,65 @@ main {
             object-fit: cover;
         }
     }
-
     //end Blue Bottle Coffee sec
+    // start Instant Coffee sec
+     #instant-coffee-sec{
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 150px 8%;
+        >img{
+            width: 53%;
+            height: 100%;
+            object-fit: cover;
+        }
+        >div{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            >h2{
+                color:$textBlackColor;
+                font-weight: 400;
+                font-size: 1.5em;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-bottom: 40px; 
+            }
+            >div{
+                >div{
+                    h3{
+                        font-size: 0.9em;
+                        font-weight: 400;
+                        color: $textColor;
+                        margin-bottom: 12px;
+                    }
+                    p{
+                        color: $textColor;
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        line-height: 1.4em;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            >a{
+                color: $textColor;
+                font-weight: 400;
+                font-size: 0.8em;
+                padding: 15px 100px;
+                background-color: white;
+                border: 1px solid black;
+                margin-top: 10px;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+     }
+    // end Instant Coffee sec
 }

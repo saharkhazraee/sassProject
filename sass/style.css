@@ -323,7 +323,7 @@ main #Blue-Bottle-Coffee-sec > div > div:first-of-type {
   margin-bottom: 40px;
 }
 main #Blue-Bottle-Coffee-sec > div > div:first-of-type h2 {
-  color: black;
+  color: rgb(51, 51, 51);
   font-weight: 400;
   font-size: 1.4em;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -359,10 +359,67 @@ main #Blue-Bottle-Coffee-sec > div > a {
   border: 1px solid black;
   margin-top: 10px;
 }
+main #Blue-Bottle-Coffee-sec > div > a:hover {
+  opacity: 0.6;
+}
 main #Blue-Bottle-Coffee-sec img {
   width: 52%;
   height: 100%;
   object-fit: cover;
+}
+main #instant-coffee-sec {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 8%;
+}
+main #instant-coffee-sec > img {
+  width: 53%;
+  height: 100%;
+  object-fit: cover;
+}
+main #instant-coffee-sec > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main #instant-coffee-sec > div > h2 {
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 40px;
+}
+main #instant-coffee-sec > div > div > div h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 12px;
+}
+main #instant-coffee-sec > div > div > div p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.9em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.4em;
+  margin-bottom: 25px;
+}
+main #instant-coffee-sec > div > a {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 15px 100px;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+main #instant-coffee-sec > div > a:hover {
+  opacity: 0.6;
 }
 
 body {
