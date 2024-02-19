@@ -22,7 +22,7 @@
             <!-- start navbar -->
             <div id="nav-bar">
                 <ul>
-                    <li><a href="">SHOP</a></li>
+                    <li><a class="dropdown-link">SHOP</a></li>
                     <li><a href="">BEST SELLERS</a></li>
                     <li><a href="">SUBSCRIPTIONS</a></li>
                     <li><a href="">LOCATIONS</a></li>
@@ -45,7 +45,25 @@
                 </ul>
             </div>
             <!-- end navbar -->
+            <!-- start dropdown  -->
         </nav>
+        <div class="dropdown">
+            <div>
+                <i class='bx bx-x close-btn'></i>
+                <ul>
+                    <li><a href="">COFFEE</a></li>
+                    <li><a href="">COFFEE SUBSCRIPTIONS</a></li>
+                    <li><a href="">INSTANT</a></li>
+                    <li><a href="">CRAFT MATCHA</a></li>
+                    <li><a href="">BREW TOOLS</a></li>
+                    <li><a href="">DRINKWARE</a></li>
+                    <li><a href="">COLLABORATIONS</a></li>
+                    <li><a href="">COLLECTIBLES</a></li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+        <!-- end dropdown -->
         <section id="slider-sec">
             <div id="slider-box">
                 <div id="first-slider" class="slider show_slider">
@@ -232,8 +250,8 @@
         <!-- end Instant Coffee sec -->
         <!-- start Tribune Tower sec -->
         <section id="tribune-tower" class="swiper mySwiper">
-            <div class="swiper-button-next swiper-icon"></div>
-            <div class="swiper-button-prev swiper-icon"></div>
+            <div class="swiper-button-next swiper-icon" id="next-btn"></div>
+            <div class="swiper-button-prev swiper-icon" id="prev-btn"></div>
             <div id="tower-slider" class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="assets/image/DSK_M4_tribune-1.jpg" alt="">

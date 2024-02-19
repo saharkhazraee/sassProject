@@ -13,12 +13,22 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+}
+header .fixed-top {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 header nav#navbar-sec {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 10000;
 }
 header nav#navbar-sec #offer-box {
   font-size: 0.75rem;
@@ -88,6 +98,64 @@ header nav#navbar-sec #nav-bar > div > a > svg {
 }
 header nav#navbar-sec #nav-bar > div > a > svg:hover {
   opacity: 0.7;
+}
+header .dropdown {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 116px;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  z-index: 1000;
+}
+header .dropdown > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  width: 35%;
+  height: 100%;
+  background-color: #FDFBF7;
+  padding: 30px 5%;
+  padding-right: 1% !important;
+}
+header .dropdown > div:first-of-type > i {
+  font-size: 2em;
+  color: rgb(51, 51, 51);
+  border: 1px solid black;
+  transition: all 0.1s ease-in;
+  margin-left: 80%;
+}
+header .dropdown > div:first-of-type > i:hover {
+  opacity: 0.7;
+}
+header .dropdown > div:first-of-type > ul {
+  width: 100%;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+header .dropdown > div:first-of-type > ul > li > a {
+  color: #333333;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+header .dropdown > div:first-of-type > ul > li > a:hover {
+  border-bottom: 1px solid black;
+}
+header .dropdown > div:nth-of-type(2) {
+  width: 65%;
+  height: 100%;
+  background-color: #FDFBF7;
+  opacity: 0.3;
+}
+header .show-dropdown {
+  display: flex;
 }
 header #slider-sec {
   width: 100%;
@@ -433,7 +501,7 @@ main #tribune-tower .swiper-icon {
   background-color: white;
   padding: 40px 20px !important;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important;
 }
 main #tribune-tower #tower-slider {
   width: 100%;
@@ -600,7 +668,7 @@ footer > div > div:first-of-type > ul {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 footer > div > div:first-of-type > ul > li {
   color: rgb(255, 255, 255);

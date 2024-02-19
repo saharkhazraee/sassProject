@@ -2,17 +2,38 @@
 // start navbar
 const navBarEl=document.querySelector('#navbar-sec');
 const sliderSecEl=document.querySelector('#slider-sec');
+let lastScrollTop = 0;
+window.addEventListener("scroll", ()=> {
+    let currentScroll = window.scrollY || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        // navBarEl.style.position='sticky';
+        navBarEl.classList.remove('fixed-top')
 
-// if(sliderSecEl.getBoundingClientRect().bottom>navBarEl.getBoundingClientRect().height){
-// navBarEl.style.position='none'
-// }
-// window.addEventListener('scroll',() => { 
-//     console.log(sliderSecEl.getBoundingClientRect().bottom)
-//     console.log(window.innerHeight*0.8)
-//     sliderSecEl.getBoundingClientRect().bottom>window.innerHeight*0.8?
-//     navBarEl.classList.add("fixed-top"):navBarEl.classList.remove("fixed-top");
-//  })
+        console.log("Scrolling down");
+    } else {
+        // Scrolling up
+        // navBarEl.style.position='fixed'
+        navBarEl.classList.add('fixed-top');
+        if(currentScroll==0){
+            navBarEl.classList.remove('fixed-top')
+        }
+        console.log("Scrolling up");
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+});
 // end navbar
+// start dropdown
+const dropdownSecEl=document.querySelector('.dropdown');
+const dropdownLinkEl=document.querySelector('.dropdown-link');
+const closeBtnEl=document.querySelector('.close-btn');
+dropdownLinkEl.addEventListener('click',() => {
+    dropdownSecEl.classList.toggle('show-dropdown')
+ })
+closeBtnEl.addEventListener('click',() => {
+    dropdownSecEl.classList.remove('show-dropdown')
+ })
+// end dropdown
 // start slider
 // start auto slider
 const sliderEl = [...document.querySelectorAll('.slider')];
@@ -105,35 +126,37 @@ let swiper = new Swiper(".mySwiper", {
     },
   });
 // const swiperSlide=document.querySelectorAll('.swiper-slide');
-// const buttonNext=document.querySelector('.swiper-button-next');
-// const buttonPrev=document.querySelector('.swiper-button-prev');
+// const buttonNext=document.querySelector('#next-btn');
+// const buttonPrev=document.querySelector('#prev-btn');
 //   let swiperIndexSlide=0;
-//   swiperSlide[0].addEventListener('mouseenter',() => {
-//     buttonNext.style.transform='translateX(-100%)';
-//     // buttonPrev.style.display='none';
+//   swiperSlide[0].addEventListener('mouseover',() => {
+//     console.log('hi')
+//     buttonNext.style.transform='translateX(150%)';
+    
+    // buttonPrev.style.display='none';
 //   })
   
-// //   swiperSlide[0].addEventListener('mouseleave',() => {
-// //     buttonNext.style.transform='translateX(150%)';
-// //     buttonPrev.style.display='none';
-// //   })
+//   swiperSlide[0].addEventListener('mouseleave',() => {
+//     buttonNext.style.transform='translateX(150%)';
+//     buttonPrev.style.display='none';
+//   })
 //   swiperSlide[1].addEventListener('mouseenter',() => {
 //     // buttonNext.style.transform='translateX(-100%)';
 //     buttonPrev.style.transform='translateX(100%)';
 
 //   })
-// //   swiperSlide[1].addEventListener('mouseleave',() => {
-// //     buttonNext.style.display='none';
-// //     buttonPrev.style.display='none';
-// //   })
-// //   swiperSlide[2].addEventListener('mouseenter',() => {
-// //     buttonNext.style.display='none';
-// //     buttonPrev.style.display='inline-block';
-// //   })
-// //   swiperSlide[2].addEventListener('mouseleave',() => {
-// //     buttonNext.style.display='none';
-// //     buttonPrev.style.display='none';
-// //   })
+//   swiperSlide[1].addEventListener('mouseleave',() => {
+//     buttonNext.style.display='none';
+//     buttonPrev.style.display='none';
+//   })
+//   swiperSlide[2].addEventListener('mouseenter',() => {
+//     buttonNext.style.display='none';
+//     buttonPrev.style.display='inline-block';
+//   })
+//   swiperSlide[2].addEventListener('mouseleave',() => {
+//     buttonNext.style.display='none';
+//     buttonPrev.style.display='none';
+//   })
 
 // end Tribune Tower sec
 // end main
