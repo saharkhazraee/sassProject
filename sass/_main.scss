@@ -142,7 +142,7 @@ main {
                 color: $textColor;
                 font-size: 0.95em;
                 font-weight: 400;
-                padding: 15px 150px;
+                padding: 15px 36%;
                 background-color: $textPrimaryColor;
                 transition: all 0.1s ease-in;
 
@@ -251,6 +251,13 @@ main {
             object-fit: cover;
         }
 
+        #img-min-size {
+            display: none;
+            width: 53%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         >div {
             width: 40%;
             display: flex;
@@ -318,6 +325,7 @@ main {
             top: 50%;
             transform: translateY(-50%) !important;
         }
+
         // .swiper-button-next{
         //     transform: translateX(150%) !important;
         // }
@@ -451,29 +459,32 @@ main {
                     justify-content: center;
                     align-items: flex-start;
                     gap: 35px;
-                    
+
 
                     h3 {
                         color: $textBlackColor;
                         font-weight: 500;
                         font-size: 1.1em;
                         margin-top: 20px;
-                        
+
                     }
-                    p{
+
+                    p {
                         color: $textColor;
                         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                        font-size:0.9em;
+                        font-size: 0.9em;
                     }
-                    a{
+
+                    a {
                         color: $textColor;
                         font-size: 0.8em;
                         font-weight: 500;
                         opacity: 0.8;
                         border-bottom: 1px solid transparent;
-                        transition: all 0.1s ease-in ;
+                        transition: all 0.1s ease-in;
                         padding: 3px 0;
-                        &:hover{
+
+                        &:hover {
                             border-bottom: 1px solid black;
                         }
                     }
@@ -483,4 +494,85 @@ main {
     }
 
     // end brew guides
+}
+
+
+@media screen and (max-width:1027px) {
+    main {
+        #Blue-Bottle-Coffee-sec {
+            flex-direction: column-reverse !important;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            height: auto;
+            gap: 30px;
+
+            >img {
+                width: 75%;
+                height: 120vh;
+            }
+
+            >div {
+                width: 75%;
+                align-items: center;
+
+                >div:first-of-type {
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                >div:nth-of-type(2) {
+                    width: 100%;
+                }
+            }
+        }
+
+        #instant-coffee-sec {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: auto;
+            width: 100%;
+
+            >img:first-of-type {
+                display: none;
+            }
+            #img-min-size{
+                display: inline-block;
+                width: 75%;
+                height: 120vh;
+            }
+            >div {
+                width: 75%;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+        #tribune-tower{
+            width: 90%;
+        }
+        #brew-guides{
+            height: auto;
+            >div>div{
+                flex-direction: column;
+                width: 49.9%;
+
+                >img{
+                    width: 90%;
+                    height: 280px;
+                }
+                >div{
+                    width: 90%;
+                }
+            }
+        }
+    }
+
 }

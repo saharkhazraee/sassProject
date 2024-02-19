@@ -34,6 +34,23 @@ closeBtnEl.addEventListener('click',() => {
     dropdownSecEl.classList.remove('show-dropdown')
  })
 // end dropdown
+// start dropdown-hamburger-menu
+const dropdownHamburgerMenuEl=document.querySelector('#dropdown-hamburger-menu');
+const menuBtnEl=document.querySelector('#menu');
+const closeMenuBtnEl=document.querySelector('#close-menu-btn');
+menuBtnEl.addEventListener('click',() => {
+    dropdownHamburgerMenuEl.style.display='flex';
+    menuBtnEl.style.display='none';
+    closeMenuBtnEl.style.display='inline-block'
+ })
+ closeMenuBtnEl.addEventListener('click',()=>{
+    dropdownHamburgerMenuEl.style.display='none';
+    menuBtnEl.style.display='inline-block';
+    closeMenuBtnEl.style.display='none'
+
+ })
+
+// end dropdown-hamburger-menu
 // start slider
 // start auto slider
 const sliderEl = [...document.querySelectorAll('.slider')];

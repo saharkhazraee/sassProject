@@ -46,6 +46,19 @@ header {
             justify-content: space-between;
             align-items: center;
 
+            #menu {
+                display: none;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: $textColor;
+            }
+            #close-menu-btn{
+                display: none ;
+                font-size: 2em;
+                font-weight: 500;
+                color: $textColor;
+    
+            }
             >ul {
                 display: flex;
                 gap: 25px;
@@ -183,6 +196,56 @@ header {
     }
 
     // end dropdown
+    // start dropdown-hamburger-menu
+    #dropdown-hamburger-menu {
+        position: absolute;
+        top: 116px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $mainBgColor;
+        z-index: 100000;
+        padding: 10px 5%;
+        
+        >ul {
+            width: 100%;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            >li>a {
+                font-size: $fontSize;
+                font-weight: 500;
+                color: $textColor;
+                letter-spacing: 0.09rem;
+                border-bottom: 1px solid transparent;
+                transition: all 0.1s ease-in;
+                &:hover{
+                    border-bottom: 1px solid black; 
+                }
+                
+            }
+        }
+
+        >div>a {
+            font-size: $fontSize;
+            font-weight: 500;
+            color: $textColor;
+            letter-spacing: 0.09rem;
+            border-bottom: 1px solid transparent;
+            transition: all 0.1s ease-in;
+            &:hover{
+                border-bottom: 1px solid black; 
+            }
+
+        }
+    }
+
+    // end dropdown-hamburger-menu
     // start slider
     #slider-sec {
         width: 100%;
@@ -292,3 +355,26 @@ header {
 }
 
 // end slider
+
+@media screen and (max-width:1070px) {
+    header {
+        nav#navbar-sec {
+            #nav-bar {
+                >ul:first-of-type {
+                    display: none;
+                }
+
+                #menu {
+                    display: inline-block;
+                    margin-right: 80px;
+                }
+                #close-menu-btn{
+                    display: none ;
+                }
+                >ul:nth-of-type(2)>li:first-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+}

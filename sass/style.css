@@ -55,6 +55,18 @@ header nav#navbar-sec #nav-bar {
   justify-content: space-between;
   align-items: center;
 }
+header nav#navbar-sec #nav-bar #menu {
+  display: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333333;
+}
+header nav#navbar-sec #nav-bar #close-menu-btn {
+  display: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: #333333;
+}
 header nav#navbar-sec #nav-bar > ul {
   display: flex;
   gap: 25px;
@@ -157,6 +169,48 @@ header .dropdown > div:nth-of-type(2) {
 header .show-dropdown {
   display: flex;
 }
+header #dropdown-hamburger-menu {
+  position: absolute;
+  top: 116px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #FDFBF7;
+  z-index: 100000;
+  padding: 10px 5%;
+}
+header #dropdown-hamburger-menu > ul {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+header #dropdown-hamburger-menu > ul > li > a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.09rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.1s ease-in;
+}
+header #dropdown-hamburger-menu > ul > li > a:hover {
+  border-bottom: 1px solid black;
+}
+header #dropdown-hamburger-menu > div > a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.09rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.1s ease-in;
+}
+header #dropdown-hamburger-menu > div > a:hover {
+  border-bottom: 1px solid black;
+}
 header #slider-sec {
   width: 100%;
   height: 90vh;
@@ -243,6 +297,21 @@ header #slider-sec #slider-number #line-slider {
   background-color: white;
 }
 
+@media screen and (max-width: 1070px) {
+  header nav#navbar-sec #nav-bar > ul:first-of-type {
+    display: none;
+  }
+  header nav#navbar-sec #nav-bar #menu {
+    display: inline-block;
+    margin-right: 80px;
+  }
+  header nav#navbar-sec #nav-bar #close-menu-btn {
+    display: none;
+  }
+  header nav#navbar-sec #nav-bar > ul:nth-of-type(2) > li:first-of-type {
+    display: none;
+  }
+}
 main {
   background-color: #FDFBF7;
 }
@@ -363,7 +432,7 @@ main #mug-sec > div a {
   color: #333333;
   font-size: 0.95em;
   font-weight: 400;
-  padding: 15px 150px;
+  padding: 15px 36%;
   background-color: rgb(255, 255, 255);
   transition: all 0.1s ease-in;
 }
@@ -445,6 +514,12 @@ main #instant-coffee-sec {
   padding: 150px 8%;
 }
 main #instant-coffee-sec > img {
+  width: 53%;
+  height: 100%;
+  object-fit: cover;
+}
+main #instant-coffee-sec #img-min-size {
+  display: none;
   width: 53%;
   height: 100%;
   object-fit: cover;
@@ -634,6 +709,74 @@ main #brew-guides > div > div > div a:hover {
   border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 1027px) {
+  main #Blue-Bottle-Coffee-sec {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: auto;
+    gap: 30px;
+  }
+  main #Blue-Bottle-Coffee-sec > img {
+    width: 75%;
+    height: 120vh;
+  }
+  main #Blue-Bottle-Coffee-sec > div {
+    width: 75%;
+    align-items: center;
+  }
+  main #Blue-Bottle-Coffee-sec > div > div:first-of-type {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #Blue-Bottle-Coffee-sec > div > div:nth-of-type(2) {
+    width: 100%;
+  }
+  main #instant-coffee-sec {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    width: 100%;
+  }
+  main #instant-coffee-sec > img:first-of-type {
+    display: none;
+  }
+  main #instant-coffee-sec #img-min-size {
+    display: inline-block;
+    width: 75%;
+    height: 120vh;
+  }
+  main #instant-coffee-sec > div {
+    width: 75%;
+    align-items: center;
+  }
+  main #instant-coffee-sec > div h2 {
+    text-align: center;
+  }
+  main #tribune-tower {
+    width: 90%;
+  }
+  main #brew-guides {
+    height: auto;
+  }
+  main #brew-guides > div > div {
+    flex-direction: column;
+    width: 49.9%;
+  }
+  main #brew-guides > div > div > img {
+    width: 90%;
+    height: 280px;
+  }
+  main #brew-guides > div > div > div {
+    width: 90%;
+  }
+}
 footer {
   width: 100%;
   background-color: #333333;
@@ -668,7 +811,7 @@ footer > div > div:first-of-type > ul {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  margin: 30px;
+  margin: 30px 0;
 }
 footer > div > div:first-of-type > ul > li {
   color: rgb(255, 255, 255);
@@ -831,6 +974,13 @@ footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > i:hover {
   gap: 5px;
 }
 
+@media screen and (max-width: 1027px) {
+  #copyright {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}
 body {
   background-color: #FDFBF7;
 }/*# sourceMappingURL=style.css.map */
