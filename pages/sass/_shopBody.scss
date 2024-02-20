@@ -1,0 +1,456 @@
+body{
+    background-color: $mainBgColor;
+}
+// blend section
+#blend-section{
+    @include shopSections();
+}
+
+
+// espresso section
+#espresso-section{
+    @include shopSections();
+
+    .shop-boxes{
+        div{
+            h4{
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Instant section
+#instant-section{
+    @include shopSections();
+
+    .shop-boxes{
+        div{
+            h3{
+                text-align: center;
+            }
+
+            h4{
+                text-align: center;
+            }
+        }
+    }
+} 
+
+// Single origin section
+#single-org-section{
+    @include shopSections();
+    .shop-boxes{
+        div{
+            h4{
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+// coffee sets section
+#coffee-sets-section{
+    @include shopSections();
+}
+
+// decaf section
+#decaf-section{
+    @include shopSections();
+    height: 100vh;
+    .shop-boxes{
+        div{
+            width: 400px;
+
+            h4{
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Cold brew section
+#coldbrew-section{
+    @include shopSections();
+    #coldbrew-h5{
+       bottom: 3%;
+       line-height: 1rem;
+    }
+}
+
+// Horizon series section
+#horizon-section{
+    @include shopSections();
+    h4{
+        text-align: center;
+    }
+}
+
+// Spring gifting
+#spring-section{
+    @include shopSections();
+    border-bottom:none;
+
+    h4{
+        text-align: center;
+    }
+}
+
+// --------------------------------------------
+// Footer
+// footer{
+//     height: 100vh;
+//     background-color: rgb(51 51 51);
+
+//     >#footer-section{
+//         margin: $bodyMargin;
+//         padding-top: 100px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 20px;
+//         color: $textCreamColor;
+
+//         >h2{
+//             font-weight: 400;
+//             font-size: 1.1rem;
+//             letter-spacing: .1em;
+//             line-height: 1.25rem;
+//             margin-bottom: 50px;
+//         }
+//         >section{
+//             display: flex;
+//             flex-direction: row;
+//             gap: 40%;
+            
+
+//             h4{
+//                 font-size: 1rem;
+//                 font-weight: 400;
+//                 letter-spacing: .1em;
+//             }
+           
+//             >#footer-items{
+//                 display: flex;
+//                 flex-direction: row;
+//                 gap: 30%;
+
+//                 div{
+//                     display: flex;
+//                     flex-direction: column;
+//                     gap: 20px;
+
+
+
+//                     p{
+//                         font-size: .8rem;
+//                         white-space: nowrap;
+//                         cursor: pointer;
+//                         transition: $transition;
+//                         width: fit-content;
+
+//                         &:hover{
+//                             border-bottom: 1px solid $textCreamColor;
+//                         }
+//                     }
+//                 }
+//             }
+//             #subscribe{
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 10px;
+
+//                 >p{
+//                     font-family: $fontFamily;
+//                     font-size: .9rem;
+//                 }
+
+//                 h5{
+//                     font-weight: 400;
+//                     letter-spacing: .1em;
+//                     transition: $transition;
+//                     margin: 5px 0px;
+//                     cursor: pointer;
+
+//                     &:hover{
+//                         border-bottom: 1px solid $textCreamColor;
+//                         width: fit-content;
+//                     }
+//                 }
+
+//                 >form{
+//                     border-bottom: 1px solid $textCreamColor;
+//                     display: flex;
+//                     gap: 50px;
+//                     input{
+//                         all: unset;
+//                         padding-bottom: 5px;
+                       
+                        
+//                        &::placeholder{
+//                         color:$textCreamColor;
+//                         font-family: $fontFamily;
+//                         font-size: .7rem;
+//                        }
+//                        }
+//                        i{
+//                         color: $textCreamColor;
+//                         margin-left: 100px;
+//                         padding-top: 8px;
+//                         cursor: pointer;
+//                     }
+//                 }
+//                 #social-media-icons{
+//                     display: flex;
+//                     gap: 30px;
+//                 }
+//             }
+
+//         }
+//         #footer-bottom{
+//             display: flex;
+//             flex-direction: row;
+//             gap: 35%;
+//             margin-top: 50px;
+//             padding-top: 30px;
+//             border-top: 1px solid $textCreamColor;
+
+//             #privacy-items{
+//                 display: flex;
+//                 flex-direction: row;
+//                 font-size: .8rem;
+//                 gap: 20px;
+//                 letter-spacing: .1em;
+//                 white-space: nowrap;
+
+//                 span{
+//                     display: flex;
+//                     flex-direction: row;
+//                 }
+//                 svg{
+//                    margin: 3px;
+//                 }
+//             }
+//             p{
+//                 font-size: .7rem;
+//                 letter-spacing: .1em;
+                
+//             }
+
+//         }
+
+//     }
+// }
+
+
+
+// media query
+@media screen and (max-width: 1200px){
+    nav{
+     #nav-bar{
+         justify-content:space-between;
+ 
+         #bottle-logo{
+             margin-right: 150px;
+         }
+         #ham-menu-icon{
+             display: inline !important;
+         }
+         .nav-item{
+                 display: none;
+             }
+         }
+     }
+     
+ }
+ 
+ 
+@media screen and (max-width: 1000px){
+    nav{
+        #header-img{
+    >#header-text{
+        top: 25% !important;
+        left: 5% !important;
+    }
+}
+}
+
+    #blend-section , #espresso-section, #instant-section, #single-org-section,
+    #coffee-sets-section,
+    #decaf-section,
+    #coldbrew-section,
+    #horizon-section,
+     #spring-section{
+        height: 100vh;
+
+        >h2{
+            margin-bottom: 20px;
+        }
+
+        .shop-boxes{
+            div{
+                height: 70vh;
+
+                >img{
+                    height: 60%;
+                }
+            }
+        }
+    }
+    
+
+        .shop-all-btn{
+            width: 200px;
+            height: 40px;
+        }  
+        .best-seller-label, .new-label, .low-stock-label, .soldout-label{
+            right: -15% !important;
+            top: 5% !important;
+        }
+        .hand-made-label, .limited-label{
+           display: none;
+        }
+}
+
+@media screen and (max-width: 800px){
+    #blend-section , #espresso-section, #instant-section, #single-org-section,
+    #coffee-sets-section,
+    #decaf-section,
+    #coldbrew-section,
+    #horizon-section,
+     #spring-section{
+        height: 90vh;
+        margin-top: 20px;
+        >h2{
+            font-size: 1rem;
+        }
+        .shop-boxes{
+            div{
+                h3{
+                    margin-top: 40px;
+                    font-size: .8rem;
+                }
+               h4{
+                font-size: 1rem;
+               }
+               p{
+                font-size: $fontSize;
+               }
+               h5{
+                font-size: .7rem;
+               }  
+            }
+        }
+        .shop-all-btn{  
+            width: 150px;
+            font-size: .7rem;
+            letter-spacing: 0;
+            margin: 30px auto;
+            padding: 5px;
+        }
+     }    
+
+     .best-seller-label, .new-label, .low-stock-label, .soldout-label{
+        width: 120px !important;
+        height: 20px !important;
+        font-size: .6rem !important;
+        right: -15% !important;
+        top: 4% !important;
+     }
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        #header-img{
+    >#header-text{
+        top: 20% !important;
+        h1{
+            font-size: 1.8rem !important;
+
+        }
+    }
+}
+    #nav-bar{
+        #bottle-logo{
+            margin-right: 100px !important;
+            height: 50px !important;
+        }
+}
+}
+#coffee-scrollBar{
+    height: 70px;
+    >p{
+        font-size: .8rem;
+    }
+}
+#blend-section , #espresso-section, #instant-section, #single-org-section,
+    #coffee-sets-section,
+    #decaf-section,
+    #coldbrew-section,
+    #horizon-section,
+     #spring-section{
+        height: fit-content;
+       align-items:center;
+       
+        .shop-boxes{
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                width: 350px;
+                height: 60vh;
+            }
+        }
+    }
+    #decaf-section{
+        padding-bottom: 30px !important;
+    }
+    .shop-all-btn{ 
+        height: 30px !important;
+    }
+    .best-seller-label, .new-label, .low-stock-label, .soldout-label{
+        width: 150px !important;
+        height: 25px !important;
+        right: -12% !important;
+        top: 7% !important;
+    }
+}
+@media screen and (max-width: 600px){
+    nav{
+        #header-img{
+    >#header-text{
+        
+        h1{
+            font-size: 1.5rem !important;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+}
+#nav-bar{
+    >#bottle-logo{
+        margin-right: 50px !important;
+    }
+}
+    }
+}
+
+@media screen and (max-width: 400px){
+    #blend-section , #espresso-section, #instant-section, #single-org-section,
+    #coffee-sets-section,
+    #decaf-section,
+    #coldbrew-section,
+    #horizon-section,
+     #spring-section{
+        .shop-boxes{
+            div{
+                width: 300px;
+                height: 50vh;
+            }
+        }
+    }
+    .best-seller-label, .new-label, .low-stock-label, .soldout-label{
+        display: none;
+    }
+}
