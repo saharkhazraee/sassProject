@@ -177,3 +177,17 @@ let swiper = new Swiper(".mySwiper", {
 
 // end Tribune Tower sec
 // end main
+// start modal
+const modalSecEl=document.querySelector('#modal');
+const modalCloseBtnEl=document.querySelector('#modal-close-btn');
+
+let showModal=setTimeout(() => {
+    modalSecEl.style.display='inline-block';
+    
+}, 2000);
+modalCloseBtnEl.addEventListener('click',() => { 
+    modalSecEl.style.display='none';
+    
+ })
+
+// end modal

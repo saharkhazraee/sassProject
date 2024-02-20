@@ -13,6 +13,109 @@ a {
   text-decoration: none;
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#modal #modal-box {
+  width: 70%;
+  min-height: 400px;
+  margin: 10% auto;
+  position: relative;
+  background-color: #FDFBF7;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  overflow: hidden;
+}
+#modal #modal-box > i#modal-close-btn {
+  font-size: 2.4em;
+  color: rgb(51, 51, 51);
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+}
+#modal #modal-box > div:first-of-type {
+  width: 50%;
+  height: 420px;
+  overflow: hidden;
+}
+#modal #modal-box > div:first-of-type > img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+#modal #modal-box > div:nth-of-type(2) {
+  width: 60%;
+  padding: 1% 3%;
+}
+#modal #modal-box > div:nth-of-type(2) > h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 0.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 30px 0;
+  padding-top: 60px !important;
+}
+#modal #modal-box > div:nth-of-type(2) > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#modal #modal-box > div:nth-of-type(2) > form > h2 {
+  font-size: 1.4em;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#modal #modal-box > div:nth-of-type(2) > form > input {
+  width: 100%;
+  padding: 4%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  border: none;
+  outline: none;
+  border: 1px solid #DADADA;
+}
+#modal #modal-box > div:nth-of-type(2) > form > input:focus {
+  border: 1px solid blue;
+}
+#modal #modal-box > div:nth-of-type(2) > form > input::placeholder {
+  color: #333333;
+  font-size: 1em;
+}
+#modal #modal-box > div:nth-of-type(2) > form > button {
+  all: unset;
+  font-size: 0.9em;
+  background-color: #545454;
+  color: rgb(255, 255, 255);
+  padding: 15px 15%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+#modal #modal-box > div:nth-of-type(2) > a {
+  font-size: 0.8em;
+  color: #333333;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid transparent;
+}
+#modal #modal-box > div:nth-of-type(2) > a:hover {
+  border-bottom: 1px solid black;
+}
+
 header {
   position: relative;
 }
