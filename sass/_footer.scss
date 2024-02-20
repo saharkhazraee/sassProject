@@ -249,7 +249,31 @@ footer {
 
             >div:first-of-type {
                 flex-wrap: wrap;
+
             }
         }
     }
+}
+
+@media screen and (max-width:770px) {
+    footer {
+        >div {
+            flex-direction: column;
+
+            >div:first-of-type {
+                flex-wrap: nowrap;
+                width: 100%;
+                margin-bottom: 40px;
+
+
+            }
+            >div:nth-of-type(2){
+                width: 100%;
+                >div>div:nth-of-type(3){
+                    width: 28%;
+                }
+            }
+        }
+    }
+
 }

@@ -4,3 +4,8 @@ body {
     background-color: $mainBgColor;
 }
 
+@media screen and (max-width:870px) {
+   body{
+    font-size: 15px;    
+   }
+}

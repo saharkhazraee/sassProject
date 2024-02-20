@@ -543,11 +543,13 @@ main {
             >img:first-of-type {
                 display: none;
             }
-            #img-min-size{
+
+            #img-min-size {
                 display: inline-block;
                 width: 75%;
                 height: 120vh;
             }
+
             >div {
                 width: 75%;
                 align-items: center;
@@ -557,20 +559,24 @@ main {
                 }
             }
         }
-        #tribune-tower{
+
+        #tribune-tower {
             width: 90%;
         }
-        #brew-guides{
+
+        #brew-guides {
             height: auto;
-            >div>div{
+
+            >div>div {
                 flex-direction: column;
                 width: 49.9%;
 
-                >img{
+                >img {
                     width: 90%;
                     height: 280px;
                 }
-                >div{
+
+                >div {
                     width: 90%;
                 }
             }
@@ -578,12 +584,14 @@ main {
     }
 
 }
+
 @media screen and (max-width:895px) {
-    main{
-        #mug-sec{
-            >div>a{
-             padding: 15px 34%;
+    main {
+        #mug-sec {
+            >div>a {
+                padding: 15px 34%;
             }
+        }
     }
 }
-}
+

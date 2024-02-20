@@ -189,6 +189,7 @@ let showModal=setTimeout(() => {
 }, 2000);
 modalCloseBtnEl.addEventListener('click',() => { 
     modalSecEl.style.display='none';
+    bodyEl.style.overflow='visible';
     
  })
 
