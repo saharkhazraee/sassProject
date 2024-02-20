@@ -69,6 +69,7 @@ main {
                         font-weight: 500;
                         letter-spacing: 0.3em;
                         margin-bottom: 1.1em;
+                        text-align: center;
                     }
 
                     h4 {
@@ -77,6 +78,7 @@ main {
                         font-weight: 400;
                         letter-spacing: 0.2em;
                         margin-bottom: 3.5em;
+                        text-align: center;
                     }
 
                     img {
@@ -575,4 +577,13 @@ main {
         }
     }
 
+}
+@media screen and (max-width:895px) {
+    main{
+        #mug-sec{
+            >div>a{
+             padding: 15px 34%;
+            }
+    }
+}
 }

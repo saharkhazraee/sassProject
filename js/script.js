@@ -180,9 +180,11 @@ let swiper = new Swiper(".mySwiper", {
 // start modal
 const modalSecEl=document.querySelector('#modal');
 const modalCloseBtnEl=document.querySelector('#modal-close-btn');
-
+const bodyEl=document.querySelector('body')
 let showModal=setTimeout(() => {
     modalSecEl.style.display='inline-block';
+    bodyEl.style.overflow='hidden';
+    
     
 }, 2000);
 modalCloseBtnEl.addEventListener('click',() => { 
