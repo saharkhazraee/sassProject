@@ -1,0 +1,24 @@
+#modal-sec{
+    width: 700px;
+    height: 300px;
+    display: none;
+    
+    top: 0;
+    right: 0;
+    >div{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        
+        
+        >img{
+            height: 100%;
+            width: 40%;
+            object-fit: cover;
+        }
+        >#text-modal{
+
+        }
+    }
+
+}
