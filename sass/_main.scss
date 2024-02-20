@@ -52,16 +52,20 @@ main {
             align-items: center;
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
+            overflow-y: hidden;
 
             .slide {
                 flex: 0 0 34%;
                 border-left: 1px solid rgba($color: #333333, $alpha: 0.2);
 
                 a {
+                    width: 100%;
+                    height: 500px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: center;
+                    padding: 0px 5%;
 
                     h2 {
                         color: $textColor;
@@ -592,6 +596,119 @@ main {
                 padding: 15px 34%;
             }
         }
+
+        #shop-sec {
+            #shop-slider>.slide>a {
+                >h2 {
+                    font-size: 0.9em;
+                }
+            }
+
+        }
+
     }
 }
 
+@media screen and (max-width:770px) {
+    main {
+        >#shop-sec {
+            #shop-slider>.slide {
+                >a {
+                    height: 300px;
+
+                    >h4 {
+                        margin-bottom: 2em;
+                    }
+
+                    >img {
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+
+        #Blue-Bottle-Coffee-sec {
+            >img {
+                width: 100%;
+            }
+
+            >div {
+                width: 100%;
+            }
+        }
+
+        #instant-coffee-sec {
+            #img-min-size {
+                display: inline-block;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            >div {
+                width: 100%;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:740px) {
+    main {
+        #mug-sec {
+            >div>a {
+                padding: 15px 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    main {
+        #shop-sec {
+            >#shop-slider {
+                >div.slide {
+                    flex: 0 0 50%;
+                }
+            }
+
+        }
+         #mug-sec > div {
+            width: 49%;
+        }
+
+        #tribune-tower #tower-slider .swiper-slide>div {
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+
+            >p {
+                font-size: 1em;
+            }
+        }
+
+        #location {
+            >h2 {
+                margin-bottom: 35px;
+            }
+
+            >a {
+                padding: 20px 30%;
+                font-size: 1em;
+            }
+        }
+
+        #brew-guides {
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+}

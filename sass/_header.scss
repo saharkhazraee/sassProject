@@ -27,11 +27,14 @@ header {
             padding: 10px 0px;
             font-weight: 400;
 
-            p>a {
-                font-size: $fontSize;
-                color: $textColor;
-                text-decoration: underline;
-                font-weight: 400;
+            p {
+                text-align: center;
+                >a {
+                    font-size: $fontSize;
+                    color: $textColor;
+                    text-decoration: underline;
+                    font-weight: 400;
+                }
             }
         }
 
@@ -52,13 +55,15 @@ header {
                 font-weight: 500;
                 color: $textColor;
             }
-            #close-menu-btn{
-                display: none ;
+
+            #close-menu-btn {
+                display: none;
                 font-size: 2em;
                 font-weight: 500;
                 color: $textColor;
-    
+
             }
+
             >ul {
                 display: flex;
                 gap: 25px;
@@ -209,7 +214,7 @@ header {
         background-color: $mainBgColor;
         z-index: 100000;
         padding: 10px 5%;
-        
+
         >ul {
             width: 100%;
             margin-bottom: 50px;
@@ -224,10 +229,11 @@ header {
                 letter-spacing: 0.09rem;
                 border-bottom: 1px solid transparent;
                 transition: all 0.1s ease-in;
-                &:hover{
-                    border-bottom: 1px solid black; 
+
+                &:hover {
+                    border-bottom: 1px solid black;
                 }
-                
+
             }
         }
 
@@ -238,8 +244,9 @@ header {
             letter-spacing: 0.09rem;
             border-bottom: 1px solid transparent;
             transition: all 0.1s ease-in;
-            &:hover{
-                border-bottom: 1px solid black; 
+
+            &:hover {
+                border-bottom: 1px solid black;
             }
 
         }
@@ -368,9 +375,11 @@ header {
                     display: inline-block;
                     margin-right: 80px;
                 }
-                #close-menu-btn{
-                    display: none ;
+
+                #close-menu-btn {
+                    display: none;
                 }
+
                 >ul:nth-of-type(2)>li:first-of-type {
                     display: none;
                 }

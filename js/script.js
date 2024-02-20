@@ -121,9 +121,6 @@ nextArrowEl.addEventListener('click',() => {
  })
  prevArrowEl.addEventListener('click',() => {
     shopSliderEl.scrollLeft -=slideEl[0].clientWidth;
-    console.log(shopSliderEl.scrollLeft,'hi')
-    console.log(shopSliderEl.clientWidth,'bye')
-    console.log(shopSliderEl.scrollWidth,'hh')
     if(shopSliderEl.scrollLeft< 10   ){
        prevArrowEl.style.display='none';
        nextArrowEl.style.display='inline-block';
