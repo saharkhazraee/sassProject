@@ -460,6 +460,7 @@ header #slider-sec #slider-number #line-slider {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transform: translateY(-45%);
   }
   header #slider-sec #slider-box .slider > div:nth-of-type(2) > h2 {
     font-size: 1.5em;
@@ -479,6 +480,12 @@ header #slider-sec #slider-number #line-slider {
   }
   header nav#navbar-sec #nav-bar > div {
     margin-right: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header #slider-sec #slider-number {
+    right: 72%;
+    width: 20%;
   }
 }
 main {

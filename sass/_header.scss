@@ -400,6 +400,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                transform: translateY(-45%);
 
                 // align-items: center;
                 >h2 {
@@ -431,6 +432,17 @@ header {
             }
             >div{
                 margin-right: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    header {
+        #slider-sec {
+            #slider-number {
+                right: 72%;
+                width: 20%;
+               
             }
         }
     }
