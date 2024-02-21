@@ -145,6 +145,11 @@ a {
     width: 80%;
   }
 }
+@media screen and (max-width: 375px) {
+  #modal > #modal-box {
+    width: 90%;
+  }
+}
 header {
   position: relative;
 }
@@ -443,6 +448,7 @@ header #slider-sec #slider-number #line-slider {
   }
   header nav#navbar-sec #nav-bar #close-menu-btn {
     display: none;
+    margin-right: 80px;
   }
   header nav#navbar-sec #nav-bar > ul:nth-of-type(2) > li:first-of-type {
     display: none;
@@ -465,6 +471,14 @@ header #slider-sec #slider-number #line-slider {
   header #slider-sec #slider-number {
     right: 77%;
     width: 15%;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav#navbar-sec #nav-bar > ul {
+    gap: 10px;
+  }
+  header nav#navbar-sec #nav-bar > div {
+    margin-right: 40px;
   }
 }
 main {
@@ -734,7 +748,6 @@ main #tribune-tower {
 main #tribune-tower .swiper-icon {
   color: #333333 !important;
   font-size: 0.9em !important;
-  background-color: white;
   padding: 40px 20px !important;
   top: 50%;
   transform: translateY(-50%) !important;
@@ -802,6 +815,9 @@ main #location > a {
 }
 main #location > a:hover {
   opacity: 0.6;
+}
+main #brew-guides-min-size {
+  display: none;
 }
 main #brew-guides {
   width: 100%;
@@ -946,6 +962,82 @@ main #brew-guides > div > div > div a:hover {
     font-size: 0.9em;
   }
 }
+@media screen and (max-width: 780px) {
+  main #brew-guides-min-size {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background-color: #F9F6F0;
+    padding: 100px 3%;
+  }
+  main #brew-guides-min-size h2 {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 1.8em;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 40px;
+  }
+  main #brew-guides-min-size > .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide {
+    width: 60%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    margin-bottom: 30px;
+    padding: 5%;
+    padding-bottom: 0px !important;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div h3 {
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div p {
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 0.9em;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div a {
+    color: #333333;
+    font-size: 0.8em;
+    font-weight: 500;
+    opacity: 0.8;
+    border-bottom: 1px solid transparent;
+    transition: all 0.1s ease-in;
+    padding: 3px 0;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div a:hover {
+    border-bottom: 1px solid black;
+  }
+  main #brew-guides {
+    display: none;
+  }
+}
 @media screen and (max-width: 770px) {
   main > #shop-sec #shop-slider > .slide > a {
     height: 300px;
@@ -997,6 +1089,9 @@ main #brew-guides > div > div > div a:hover {
   main #mug-sec > div > p {
     font-size: 1.2em;
   }
+  main #tribune-tower .swiper-icon {
+    font-size: 0.5em !important;
+  }
   main #tribune-tower #tower-slider .swiper-slide > div {
     flex-direction: column;
     justify-content: center;
@@ -1021,6 +1116,47 @@ main #brew-guides > div > div > div a:hover {
   }
   main #brew-guides h2 {
     text-align: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  main #shop-sec > #shop-slider > div.slide {
+    flex: 0 0 100%;
+  }
+  main #shop-sec > #shop-slider > div.slide > a {
+    height: 400px;
+  }
+  main #shop-sec > #shop-slider > div.slide > a > img {
+    margin-top: 1em;
+  }
+  main #shop-sec > #shop-slider > div.slide > a > h2 {
+    font-size: 1.03em;
+  }
+}
+@media screen and (max-width: 460px) {
+  main #brew-guides-min-size {
+    align-items: center;
+  }
+  main #brew-guides-min-size h2 {
+    text-align: center;
+  }
+  main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  main #Blue-Bottle-Coffee-sec > div > a {
+    padding: 15px 24%;
+  }
+  main #instant-coffee-sec > div > a {
+    padding: 15px 24%;
+  }
+}
+@media screen and (max-width: 330px) {
+  main #mug-sec > div {
+    width: 90%;
+  }
+  main #mug-sec > div > a {
+    padding: 15px 25%;
   }
 }
 footer {
@@ -1247,6 +1383,18 @@ footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > i:hover {
   }
   footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) {
     width: 28%;
+  }
+}
+@media screen and (max-width: 475px) {
+  footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) {
+    width: 50%;
+  }
+  #copyright > div {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #copyright > div > a {
+    font-size: 1.2em;
   }
 }
 body {

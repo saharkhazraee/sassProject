@@ -133,7 +133,7 @@ nextArrowEl.addEventListener('click',() => {
 
 // end shop sec
 // start Tribune Tower sec
-let swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper("#tribune-tower", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -173,6 +173,18 @@ let swiper = new Swiper(".mySwiper", {
 //   })
 
 // end Tribune Tower sec
+// start brew guides min size
+var swiperGuidesMinSize = new Swiper("#mySwiper-guides-min-size", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+// end brew guides min size
 // end main
 // start modal
 const modalSecEl=document.querySelector('#modal');

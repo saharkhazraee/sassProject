@@ -326,7 +326,7 @@ main {
         .swiper-icon {
             color: $textColor !important;
             font-size: 0.9em !important;
-            background-color: white;
+            // background-color: white;
             padding: 40px 20px !important;
             top: 50%;
             transform: translateY(-50%) !important;
@@ -421,6 +421,10 @@ main {
 
     // end location sec
     // start brew guides
+    #brew-guides-min-size {
+        display: none;
+    }
+
     #brew-guides {
         width: 100%;
         height: 80vh;
@@ -609,6 +613,118 @@ main {
     }
 }
 
+@media screen and (max-width:780px) {
+    main {
+
+        #brew-guides-min-size {
+            display: flex !important;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            // height: 80vh;
+            background-color: #F9F6F0;
+            padding: 100px 3%;
+
+
+            h2 {
+                color: $textBlackColor;
+                font-weight: 400;
+                font-size: 1.8em;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-bottom: 40px;
+            }
+
+            >.swiper {
+                width: 100%;
+                height: 100%;
+
+
+                >.swiper-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    // transform: translate3d(0px, 0px, 0px) !important;
+
+                    >.swiper-slide {
+                        width: 60%;
+                        // text-align: center;
+                        // font-size: 18px;
+                        background: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: center;
+                        align-items: flex-start;
+
+
+                        >img {
+                            width: 100%;
+                            height: 250px;
+                            object-fit: cover;
+                        }
+
+                        >div {
+                            width: 100%;
+                            height: 200px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            gap: 35px;
+                            margin-bottom: 30px;
+                            padding: 5%;
+                            padding-bottom: 0px !important;
+
+                            h3 {
+                                color: $textBlackColor;
+                                font-weight: 500;
+                                font-size: 1.1em;
+                                margin-top: 20px;
+
+                            }
+
+                            p {
+                                color: $textColor;
+                                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                font-size: 0.9em;
+                            }
+
+                            a {
+                                color: $textColor;
+                                font-size: 0.8em;
+                                font-weight: 500;
+                                opacity: 0.8;
+                                border-bottom: 1px solid transparent;
+                                transition: all 0.1s ease-in;
+                                padding: 3px 0;
+
+                                &:hover {
+                                    border-bottom: 1px solid black;
+                                }
+                            }
+                        }
+
+                    }
+
+                    // // >.swiper-slide:nth-child(2n) {
+                    //     width: 40% !important;
+                    // // }
+
+                    // // >.swiper-slide:nth-child(3n) {
+                    // //     width: 20% !important;
+                    // // }
+
+                }
+            }
+
+
+        }
+
+        #brew-guides {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width:770px) {
     main {
         >#shop-sec {
@@ -658,9 +774,10 @@ main {
 
 @media screen and (max-width:740px) {
     main {
-        #vertical-bar{
+        #vertical-bar {
             display: none;
         }
+
         #mug-sec {
             >div>a {
                 padding: 15px 30%;
@@ -668,6 +785,8 @@ main {
         }
     }
 }
+
+
 
 @media screen and (max-width:650px) {
     main {
@@ -679,27 +798,37 @@ main {
             }
 
         }
-         #mug-sec > div {
+
+        #mug-sec>div {
             width: 49%;
-            >h2{
+
+            >h2 {
                 font-size: 1.5em;
                 font-weight: 600;
             }
-            >p{
+
+            >p {
                 font-size: 1.2em;
             }
         }
 
-        #tribune-tower #tower-slider .swiper-slide>div {
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+        #tribune-tower {
+            .swiper-icon {
+                font-size: 0.5em !important;
+            }
 
-            >p {
-                font-size: 1em;
+            #tower-slider .swiper-slide>div {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+
+                >p {
+                    font-size: 1em;
+                }
             }
         }
+
 
         #location {
             >h2 {
@@ -724,4 +853,70 @@ main {
         }
     }
 
+}
+
+@media screen and (max-width: 490px) {
+    main {
+        #shop-sec {
+            >#shop-slider {
+                >div.slide {
+                    flex: 0 0 100%;
+
+                    >a {
+                        height: 400px;
+
+                        >img {
+                            margin-top: 1em;
+                        }
+
+                        >h2 {
+                            font-size: 1.03em;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    main {
+        #brew-guides-min-size {
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+
+            >.swiper>.swiper-wrapper>.swiper-slide {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    main {
+        #Blue-Bottle-Coffee-sec>div>a {
+            padding: 15px 24%;
+        }
+
+        #instant-coffee-sec>div>a {
+            padding: 15px 24%;
+        }
+    }
+
+}
+
+@media screen and (max-width:330px) {
+    main {
+        #mug-sec>div {
+            width: 90%;
+            >a {
+                padding: 15px 25%;
+            }
+        }
+    }
 }

@@ -267,11 +267,38 @@ footer {
 
 
             }
-            >div:nth-of-type(2){
+
+            >div:nth-of-type(2) {
                 width: 100%;
-                >div>div:nth-of-type(3){
+
+                >div>div:nth-of-type(3) {
                     width: 28%;
                 }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:475px) {
+    footer {
+        >div {
+            
+            >div:nth-of-type(2) {
+                >div>div:nth-of-type(3) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+
+    #copyright {
+        >div {
+            flex-wrap: wrap;
+            text-align: center;
+            >a{
+                font-size: 1.2em;
             }
         }
     }

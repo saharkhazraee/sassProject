@@ -380,6 +380,7 @@ header {
 
                 #close-menu-btn {
                     display: none;
+                    margin-right: 80px;
                 }
 
                 >ul:nth-of-type(2)>li:first-of-type {
@@ -410,13 +411,27 @@ header {
                     text-align: center;
                 }
 
-                
+
             }
+
             #slider-number {
                 right: 77%;
                 width: 15%;
             }
         }
 
+    }
+}
+
+@media screen and (max-width:450px) {
+    header {
+        nav#navbar-sec #nav-bar {
+            >ul {
+                gap: 10px;
+            }
+            >div{
+                margin-right: 40px;
+            }
+        }
     }
 }
