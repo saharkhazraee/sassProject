@@ -140,6 +140,11 @@ a {
     padding-top: 0px !important;
   }
 }
+@media screen and (max-width: 600px) {
+  #modal > #modal-box {
+    width: 80%;
+  }
+}
 header {
   position: relative;
 }
@@ -406,6 +411,7 @@ header #slider-sec #slider-number {
   right: 5%;
 }
 header #slider-sec #slider-number #slider-num {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -440,6 +446,25 @@ header #slider-sec #slider-number #line-slider {
   }
   header nav#navbar-sec #nav-bar > ul:nth-of-type(2) > li:first-of-type {
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  header #slider-sec #slider-box .slider > div:nth-of-type(2) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header #slider-sec #slider-box .slider > div:nth-of-type(2) > h2 {
+    font-size: 1.5em;
+  }
+  header #slider-sec #slider-box .slider > div:nth-of-type(2) > a {
+    width: 90%;
+    text-align: center;
+  }
+  header #slider-sec #slider-number {
+    right: 77%;
+    width: 15%;
   }
 }
 main {
@@ -951,6 +976,9 @@ main #brew-guides > div > div > div a:hover {
   }
 }
 @media screen and (max-width: 740px) {
+  main #vertical-bar {
+    display: none;
+  }
   main #mug-sec > div > a {
     padding: 15px 30%;
   }
@@ -961,6 +989,13 @@ main #brew-guides > div > div > div a:hover {
   }
   main #mug-sec > div {
     width: 49%;
+  }
+  main #mug-sec > div > h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  main #mug-sec > div > p {
+    font-size: 1.2em;
   }
   main #tribune-tower #tower-slider .swiper-slide > div {
     flex-direction: column;
@@ -973,10 +1008,13 @@ main #brew-guides > div > div > div a:hover {
   }
   main #location > h2 {
     margin-bottom: 35px;
+    text-align: center;
   }
   main #location > a {
-    padding: 20px 30%;
+    padding: 20px 5%;
     font-size: 1em;
+    width: 90%;
+    text-align: center;
   }
   main #brew-guides {
     align-items: center;
@@ -1201,7 +1239,6 @@ footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > i:hover {
     flex-direction: column;
   }
   footer > div > div:first-of-type {
-    flex-wrap: nowrap;
     width: 100%;
     margin-bottom: 40px;
   }

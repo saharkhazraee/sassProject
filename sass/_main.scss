@@ -658,6 +658,9 @@ main {
 
 @media screen and (max-width:740px) {
     main {
+        #vertical-bar{
+            display: none;
+        }
         #mug-sec {
             >div>a {
                 padding: 15px 30%;
@@ -678,6 +681,13 @@ main {
         }
          #mug-sec > div {
             width: 49%;
+            >h2{
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            >p{
+                font-size: 1.2em;
+            }
         }
 
         #tribune-tower #tower-slider .swiper-slide>div {
@@ -694,11 +704,14 @@ main {
         #location {
             >h2 {
                 margin-bottom: 35px;
+                text-align: center;
             }
 
             >a {
-                padding: 20px 30%;
+                padding: 20px 5%;
                 font-size: 1em;
+                width: 90%;
+                text-align: center;
             }
         }
 

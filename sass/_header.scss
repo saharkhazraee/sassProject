@@ -29,6 +29,7 @@ header {
 
             p {
                 text-align: center;
+
                 >a {
                     font-size: $fontSize;
                     color: $textColor;
@@ -333,6 +334,7 @@ header {
             right: 5%;
 
             #slider-num {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -385,5 +387,36 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        #slider-sec {
+
+            #slider-box .slider>div:nth-of-type(2) {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                // align-items: center;
+                >h2 {
+                    font-size: 1.5em;
+                }
+
+                >a {
+                    width: 90%;
+                    text-align: center;
+                }
+
+                
+            }
+            #slider-number {
+                right: 77%;
+                width: 15%;
+            }
+        }
+
     }
 }
