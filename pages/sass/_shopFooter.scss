@@ -233,3 +233,198 @@ footer {
 }
 
 // end copyright
+@media screen and (max-width:770px) {
+    main {
+        >#shop-sec {
+            #shop-slider>.slide {
+                >a {
+                    height: 300px;
+
+                    >h4 {
+                        margin-bottom: 2em;
+                    }
+
+                    >img {
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+
+        #Blue-Bottle-Coffee-sec {
+            >img {
+                width: 100%;
+            }
+
+            >div {
+                width: 100%;
+            }
+        }
+
+        #instant-coffee-sec {
+            #img-min-size {
+                display: inline-block;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            >div {
+                width: 100%;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:740px) {
+    main {
+        #vertical-bar {
+            display: none;
+        }
+
+        #mug-sec {
+            >div>a {
+                padding: 15px 30%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:650px) {
+    main {
+        #shop-sec {
+            >#shop-slider {
+                >div.slide {
+                    flex: 0 0 50%;
+                }
+            }
+
+        }
+
+        #mug-sec>div {
+            width: 49%;
+
+            >h2 {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+
+            >p {
+                font-size: 1.2em;
+            }
+        }
+
+        #tribune-tower {
+            .swiper-icon {
+                font-size: 0.5em !important;
+            }
+
+            #tower-slider .swiper-slide>div {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+
+                >p {
+                    font-size: 1em;
+                }
+            }
+        }
+
+
+        #location {
+            >h2 {
+                margin-bottom: 35px;
+                text-align: center;
+            }
+
+            >a {
+                padding: 20px 5%;
+                font-size: 1em;
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        #brew-guides {
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    main {
+        #shop-sec {
+            >#shop-slider {
+                >div.slide {
+                    flex: 0 0 100%;
+
+                    >a {
+                        height: 400px;
+
+                        >img {
+                            margin-top: 1em;
+                        }
+
+                        >h2 {
+                            font-size: 1.03em;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    main {
+        #brew-guides-min-size {
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+
+            >.swiper>.swiper-wrapper>.swiper-slide {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    main {
+        #Blue-Bottle-Coffee-sec>div>a {
+            padding: 15px 24%;
+        }
+
+        #instant-coffee-sec>div>a {
+            padding: 15px 24%;
+        }
+    }
+
+}
+
+@media screen and (max-width:330px) {
+    main {
+        #mug-sec>div {
+            width: 90%;
+            >a {
+                padding: 15px 25%;
+            }
+        }
+    }
+}
