@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/css/shopStyle.css" />
+    <link rel="stylesheet" href="css/shopStyle.css" />
+    <link rel="stylesheet" href="../css/shopStyle.css">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -13,7 +14,7 @@
   <body>
     <header>
       <!--  navbar -->
-      <nav>
+      <nav id="navbar-el">
         <div id="offer">
           <p>
             Free Shipping on Orders Over $40 | Free Shipping Always on
@@ -29,7 +30,7 @@
 
           <div id="nav-bar">
             <i id="ham-menu-icon" class='bx bx-menu'></i>
-            <div class="nav-items" id="nav-items-display" >
+            <div class="nav-items" id="nav-items-display">
               <ul>
                 <li><a href="" class="nav-item">SHOP</a></li>
                 <li><a href="" class="nav-item">BEST SELLERS</a></li>
@@ -540,64 +541,9 @@
     </section>
 
 
-    <!-- start footer -->
-    <footer>
-      <h2>BLUE BOTTLE COFFEE</h2>
-      <div>
-          <div>
-              <ul>
-                  <li>COMPANY</li>
-                  <li><a href="">LOCATIONS</a></li>
-                  <li><a href="">CAREERS</a></li>
-              </ul>
-              <ul>
-                  <li>LEARN</li>
-                  <li><a href="">BREW GUIDES</a></li>
-                  <li><a href="">VIRTUAL CLASSES</a></li>
-                  <li><a href="">OUR BRAND</a></li>
-                  <li><a href="">OUR COFFEE</a></li>
-                  <li><a href="">SUSTAINABILITY</a></li>
-                  <li><a href="">BLUE BOTTLE STUDIO</a></li>
-                  <li><a href="">BLOG</a></li>
-              </ul>
-              <ul>
-                  <li>MORE</li>
-                  <li>CONTACT US</li>
-                  <li>SAMRA FAQS</li>
-                  <li>FAQS</li>
-                  <li>GIFT CARDS</li>
-                  <li>GIFT SUBSCRIPTIONS</li>
-              </ul>
-          </div>
-          <div>
-              <h3>SUBSCRIBE AND STAY UPDATED</h3>
-              <p>
-                  Join our email newsletter for exclusive offers, Blue Bottle news, events, and first access to our
-                  most exciting releases. Plus, get complimentary shipping on your first purchase when you sign up.
-              </p>
-              <div>
-                  <div>
-                      <input type="email" name="" id="" placeholder="enter your email address">
-                      <a href=""><i class='bx bx-arrow-back bx-rotate-180'></i></a>
-                  </div>
-                  <div>
-                      <a href="">PRIVACY POLICY & TERMS</a>
-                  </div>
-                  <div>
-                      <i class='bx bxl-facebook'></i>
-                      <i class='bx bxl-twitter'></i>
-                      <i class='bx bxl-instagram'></i>
-                      <i class='bx bxl-youtube' undefined></i>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-  <!-- end footer -->
 
-    
-    <!-- footer -->
-    <!-- <footer>
+ <!-- footer -->
+    <footer>
       <section id="footer-section">
       <h2>BLUE BOTTLE COFFEE</h2>
       <section>
@@ -642,6 +588,7 @@
         </div>
       </div>
       </section>
+      <hr>
       <div id="footer-bottom">
         <div id="privacy-items">
           <p>TERMS OF USE</p>
@@ -657,8 +604,10 @@
 
     </section>
      
-    </footer> -->
-<!--  -->
+    </footer>
+
+
+  
     <!-- Modal -->
     <section id="modal-sec">
       <div>
@@ -666,10 +615,10 @@
         <i class='bx bx-x ' id="modal-close-btn"></i>
         <div id="text-modal">
           <p>SUBSCRIBE AND STAY UPDATED</p>
-          <form action=""></form>
+          <form action="" id="login-form">
           <h3>Get complimentary shipping on your next purchase</h3>
-          <input type="email" placeholder="EMAIL *">
-          <button id="submit-modal-btn">SUBMIT</button>
+          <input id="email-input" type="email" placeholder="EMAIL *">
+          <button id="submit-modal-btn" type="submit">SUBMIT</button>
         </form>
         <h5>PRIVACY AND TERMS</h5>
 
@@ -677,6 +626,33 @@
       </div>
     </section>
 
+    <!-- hamburger menu -->
+    <section id="ham-menu">
+      <div>
+        <div id="menu-nav">
+          <i class='bx bx-x ' id="menu-close-btn"></i>
+          <img src="shopAssets/Blue_Bottle_Coffee_logo.svg" alt="">
+          <div id="menu-icons">
+              <a href="" class="nav-icon">
+                <i class='bx bx-search-alt-2'></i>
+              <a href="" class="nav-icon"
+                ><i id="user-icon" class="bx bx-user"></i
+              ></a>
+          </div>
+        </div>
+          <div id="menu-items">
+            <span>SHOP</span>
+            <span>BEST SELLERS</span>
+            <span>SUBSCRIPTIONS</span>
+            <span>LOCATIONS</span>
+          </div>
+          <h3>$5 FOR YOUR 1ST BAG</h3>
+        
+      </div>
+    </section>
 
+
+    <script src="js/shopScript.js"></script>
   </body>
 </html>
+

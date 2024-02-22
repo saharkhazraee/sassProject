@@ -16,9 +16,14 @@ ul {
 #modal-sec {
   width: 700px;
   height: 300px;
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 1000;
   display: none;
-  top: 0;
-  right: 0;
+  background-color: rgb(249, 246, 240);
 }
 #modal-sec > div {
   display: flex;
@@ -30,6 +35,176 @@ ul {
   width: 40%;
   object-fit: cover;
 }
+#modal-sec > div > #text-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 20px;
+}
+#modal-sec > div > #text-modal p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: rgb(84, 84, 84);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#modal-sec > div > #text-modal > form {
+  display: flex;
+  flex-direction: column;
+}
+#modal-sec > div > #text-modal > form h3 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: Chronicle Text G1 Roman, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  color: #333333;
+  margin-bottom: 5px;
+}
+#modal-sec > div > #text-modal > form input {
+  height: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  outline: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#modal-sec > div > #text-modal > form input::placeholder {
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+#modal-sec > div > #text-modal > form #submit-modal-btn {
+  margin-top: 10px;
+  width: 170px;
+  height: 40px;
+  background-color: rgb(84, 84, 84);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#modal-sec > div > #text-modal > form #submit-modal-btn:hover {
+  background-color: #333333;
+}
+#modal-sec > div > #text-modal h5 {
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #333333;
+}
+#modal-sec > div > #modal-close-btn {
+  font-size: 1.8rem;
+  color: rgb(84, 84, 84);
+  position: absolute;
+  right: 0;
+  top: 2%;
+  cursor: pointer;
+}
+#modal-sec > div > #modal-close-btn:hover {
+  color: #333333;
+}
+
+#login-section {
+  width: 50%;
+  background-color: rgb(249, 246, 240);
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  right: 100%;
+}
+#login-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#login-section div #close-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  right: 2%;
+  position: absolute;
+  color: #333333;
+  cursor: pointer;
+}
+#login-section div #close-span p {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#login-section div #close-span #login-close-btn {
+  font-size: 1.6rem;
+}
+#login-section div #login-items {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 80px;
+}
+#login-section div #login-items h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: Chronicle Text G1 Roman, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  color: rgb(84, 84, 84);
+}
+#login-section div #login-items h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  color: rgb(84, 84, 84);
+}
+#login-section div #login-items form {
+  display: flex;
+  flex-direction: column;
+}
+#login-section div #login-items form input {
+  width: 400px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  outline: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#login-section div #login-items form input::placeholder {
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: rgb(84, 84, 84);
+}
+#login-section div #login-items form #continue-btn {
+  margin-top: 30px;
+  width: 230px;
+  height: 40px;
+  background-color: rgb(84, 84, 84);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#login-section div #login-items form #continue-btn:hover {
+  background-color: #333333;
+}
+#login-section div #login-items #login-faq span h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+#login-section div #login-items #login-faq span p {
+  font-size: 0.9rem;
+  font-family: Chronicle Text G1 Roman, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  color: rgb(84, 84, 84);
+}
+
+.show-login-form {
+  transform: translate(-100%);
+}
+
 nav #offer {
   height: 30px;
   background-color: white;
@@ -158,6 +333,84 @@ nav #header-img #nav-bar .nav-items > ul #user-icon {
   background: rgb(84, 84, 84);
 }
 
+#ham-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  left: 100%;
+  position: fixed;
+  padding: 10px;
+}
+#ham-menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#ham-menu > div #menu-nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(253, 251, 247);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+#ham-menu > div #menu-nav img {
+  height: 80%;
+}
+#ham-menu > div #menu-nav #menu-close-btn {
+  font-size: 2rem;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#ham-menu > div #menu-nav #menu-close-btn:hover {
+  color: #333333;
+}
+#ham-menu > div #menu-nav #menu-icons {
+  display: flex;
+  gap: 20px;
+}
+#ham-menu > div #menu-nav #menu-icons .nav-icon {
+  font-size: 1.4rem;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#ham-menu > div #menu-nav #menu-icons .nav-icon:hover {
+  color: #333333;
+}
+#ham-menu > div #menu-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+#ham-menu > div #menu-items span {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#ham-menu > div #menu-items span:hover {
+  color: rgb(84, 84, 84);
+}
+#ham-menu > div h3 {
+  position: absolute;
+  bottom: 2%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.show-ham-menu {
+  transform: translate(-100%);
+}
+
 body {
   background-color: rgb(253, 251, 247);
 }
@@ -194,8 +447,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#blend-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#blend-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #blend-section .shop-boxes div > img {
   height: 70%;
@@ -261,9 +514,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#blend-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #blend-section .best-seller-label {
   width: 150px;
@@ -273,6 +531,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -288,6 +547,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -303,6 +563,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -318,6 +579,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -333,6 +595,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -373,8 +636,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#espresso-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#espresso-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #espresso-section .shop-boxes div > img {
   height: 70%;
@@ -440,9 +703,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#espresso-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #espresso-section .best-seller-label {
   width: 150px;
@@ -452,6 +720,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -467,6 +736,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -482,6 +752,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -497,6 +768,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -512,6 +784,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -555,8 +828,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#instant-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#instant-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #instant-section .shop-boxes div > img {
   height: 70%;
@@ -622,9 +895,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#instant-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #instant-section .best-seller-label {
   width: 150px;
@@ -634,6 +912,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -649,6 +928,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -664,6 +944,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -679,6 +960,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -694,6 +976,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -740,8 +1023,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#single-org-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#single-org-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #single-org-section .shop-boxes div > img {
   height: 70%;
@@ -807,9 +1090,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#single-org-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #single-org-section .best-seller-label {
   width: 150px;
@@ -819,6 +1107,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -834,6 +1123,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -849,6 +1139,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -864,6 +1155,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -879,6 +1171,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -922,8 +1215,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#coffee-sets-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#coffee-sets-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #coffee-sets-section .shop-boxes div > img {
   height: 70%;
@@ -989,9 +1282,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#coffee-sets-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #coffee-sets-section .best-seller-label {
   width: 150px;
@@ -1001,6 +1299,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1016,6 +1315,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1031,6 +1331,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1046,6 +1347,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1061,6 +1363,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1102,8 +1405,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#decaf-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#decaf-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #decaf-section .shop-boxes div > img {
   height: 70%;
@@ -1169,9 +1472,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#decaf-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #decaf-section .best-seller-label {
   width: 150px;
@@ -1181,6 +1489,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1196,6 +1505,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1211,6 +1521,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1226,6 +1537,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1241,6 +1553,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1287,8 +1600,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#coldbrew-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#coldbrew-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #coldbrew-section .shop-boxes div > img {
   height: 70%;
@@ -1354,9 +1667,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#coldbrew-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #coldbrew-section .best-seller-label {
   width: 150px;
@@ -1366,6 +1684,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1381,6 +1700,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1396,6 +1716,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1411,6 +1732,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1426,6 +1748,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1470,8 +1793,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#horizon-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#horizon-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #horizon-section .shop-boxes div > img {
   height: 70%;
@@ -1537,9 +1860,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#horizon-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #horizon-section .best-seller-label {
   width: 150px;
@@ -1549,6 +1877,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1564,6 +1893,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1579,6 +1909,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1594,6 +1925,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1609,6 +1941,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1653,8 +1986,8 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#spring-section .shop-boxes div:hover + .add-to-cart {
-  display: flex;
+#spring-section .shop-boxes div:hover .add-to-cart {
+  transform: scale(1);
 }
 #spring-section .shop-boxes div > img {
   height: 70%;
@@ -1720,9 +2053,14 @@ body {
   background-color: rgb(84, 84, 84);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transition: all 0.2s;
-  display: none;
+  display: flex;
+  transform: scale(0);
+}
+#spring-section .add-to-cart:hover {
+  background-color: #333333;
 }
 #spring-section .best-seller-label {
   width: 150px;
@@ -1732,6 +2070,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1747,6 +2086,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1762,6 +2102,7 @@ body {
   background-color: rgb(148, 183, 187);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1777,6 +2118,7 @@ body {
   background-color: rgb(84, 84, 84);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;
@@ -1792,6 +2134,7 @@ body {
   background-color: rgb(75, 94, 35);
   white-space: nowrap;
   font-size: 0.75rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   letter-spacing: 0.1em;
   transform: rotate(45deg);
   position: absolute;

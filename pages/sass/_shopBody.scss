@@ -310,6 +310,44 @@ body{
         .hand-made-label, .limited-label{
            display: none;
         }
+
+       footer{
+        height: fit-content;
+        padding-bottom: 20px;
+
+        h2{
+            margin-bottom: 20px !important;
+        }
+        >#footer-section{
+            padding-top: 20px !important;
+
+            section{
+                gap: 20% !important;
+            }
+            form{
+                i{
+                    margin-left: 50px !important;
+                }
+            }
+
+            #footer-items{
+                gap: 15% !important;
+            }
+            #subscribe{
+                width: 300px;
+            }
+        }
+
+        #footer-bottom{
+            flex-direction: column !important;
+            align-items: center;
+           
+            #privacy-items{
+                margin-bottom: 10px;
+            }
+
+        }
+       }
 }
 
 @media screen and (max-width: 800px){
@@ -357,6 +395,26 @@ body{
         right: -15% !important;
         top: 4% !important;
      }
+
+     footer{
+        
+        #footer-section{
+            section{
+               #footer-items{
+                flex-wrap: wrap !important;
+               
+                div{
+                    gap: 15px !important;
+                }
+
+                h4{
+                    margin-top: 25px;
+                }
+               }
+            }
+        }
+     }
+
 }
 
 @media screen and (max-width: 700px){
@@ -397,8 +455,8 @@ body{
             align-items: center;
 
             div{
-                width: 350px;
-                height: 60vh;
+                width: 400px;
+                height: 70vh;
             }
         }
     }
@@ -412,7 +470,11 @@ body{
         width: 150px !important;
         height: 25px !important;
         right: -12% !important;
-        top: 7% !important;
+        top: 5% !important;
+    }
+    #modal-sec{
+        width: 500px !important;
+
     }
 }
 @media screen and (max-width: 600px){
@@ -433,6 +495,27 @@ body{
         margin-right: 50px !important;
     }
 }
+    }
+
+    footer{
+        padding-bottom: 40px !important;
+        
+        #footer-section{
+            section{
+                flex-direction: column;
+               
+                #subscribe{
+                    margin-top: 30px !important;
+                }
+            }
+        }
+    }
+
+    #modal-sec{
+       img{
+        display: none;
+       }
+
     }
 }
 

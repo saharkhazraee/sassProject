@@ -31,8 +31,8 @@
             overflow: hidden;
             cursor: pointer;
 
-            &:hover + .add-to-cart{
-               display: flex;
+            &:hover .add-to-cart{
+               transform: scale(1);
             }
 
             >img{
@@ -103,9 +103,15 @@
         background-color:rgb(84 84 84);
         color: $textCreamColor;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transition: $transition;
-        display: none;
+        display: flex;
+        transform: scale(0);
+
+        &:hover{
+            background-color: $textColor;
+        }
     }
     .best-seller-label{
         width: 150px;
@@ -115,6 +121,7 @@
         background-color:rgb(84 84 84);
         white-space: nowrap;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transform: rotate(45deg);
         position: absolute;
@@ -130,6 +137,7 @@
         background-color:rgb(84 84 84);
         white-space: nowrap;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transform: rotate(45deg);
         position: absolute;
@@ -146,6 +154,7 @@
         background-color:rgb(148 183 187);
         white-space: nowrap;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transform: rotate(45deg);
         position: absolute;
@@ -162,6 +171,7 @@
         background-color:rgb(84 84 84);
         white-space: nowrap;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transform: rotate(45deg);
         position: absolute;
@@ -178,6 +188,7 @@
         background-color:rgb(75 94 35);
         white-space: nowrap;
         font-size: $fontSize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: .1em;
         transform: rotate(45deg);
         position: absolute;
@@ -188,5 +199,4 @@
 }
 
 
-// media query mixins
 
