@@ -1,0 +1,144 @@
+nav{
+    #offer{
+        height: 30px;
+        background-color: white;
+        color: $textColor;
+        font-size: $fontSize;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $fontFamily;
+        }
+        a{
+            color: $textColor;
+            text-decoration: underline;
+            font-family: $fontFamily;
+        }
+    }
+    #header-img{
+        >img{
+        width: 100%;
+        position: relative;
+        }
+        #header-text{
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: white;
+            h1{
+                font-family:$fontFamily;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+            p{
+                font-family:$fontFamily;
+                font-size: 1.1rem;
+            }
+           
+        }
+        #nav-bar{
+            position: absolute;
+            top: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            padding: 0px 60px;
+
+            >#bottle-logo{
+                height: 65px;
+                cursor: pointer;
+                transition: all .2s;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+            #ham-menu-icon{
+                color: white;
+                display: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: .6;
+                }
+            }
+            .nav-items{
+
+                >ul{
+                 display: flex;
+                flex-direction: row;
+                gap: 30px;
+                .nav-item{
+                    color: white;
+                    font-size: $fontSize;
+                    font-weight: 600;
+                    letter-spacing: .1rem;
+                    transition:$transition;
+                    
+                    
+                    &:hover{
+                      border-bottom: 1px solid white;
+
+                    }
+
+                }
+                .nav-icon{
+                    &:hover{
+                        opacity: .6;
+                    }
+                }
+                #user-icon{
+                   font-size: 1.2rem;
+                   color: white;
+                }
+                }
+            }
+        }
+    }
+}
+#coffee-scrollBar{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding: 15px 50px;
+    overflow-x: auto;
+
+    >p{
+        font-size: .9rem;
+        font-weight: 400;
+        height: 25px;
+        color: $secondTextColor;
+        letter-spacing: .1em;
+       white-space: nowrap;
+       cursor: pointer;
+       transition: $transition;
+
+       &:hover{
+        border-bottom: 1px solid $secondTextColor;
+       }
+       }
+       .all-coffee{
+        border-bottom: 1px solid $secondTextColor;
+    }
+    &::-webkit-scrollbar{
+        height: 15px;
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background:lighten($secondTextColor, 50%);
+    }
+    &::-webkit-scrollbar-thumb:hover{
+        background: $secondTextColor;
+    }
+}
