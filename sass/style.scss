@@ -1,2 +1,16 @@
-@import '_normalization','_variables','_header';
+@import '_normalization', '_variables', '_modal', '_header', '_main', '_footer';
 
+body {
+    background-color: $mainBgColor;
+}
+
+@media screen and (max-width:870px) {
+   body{
+    font-size: 15px;    
+   }
+}
+@media screen and (max-width:740px) {
+    body{
+     font-size: 14px;    
+    }
+ }
