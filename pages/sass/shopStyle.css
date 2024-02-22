@@ -312,6 +312,133 @@ nav #header-img #nav-bar .nav-items > ul #user-icon {
   transform: translate(-100%);
 }
 
+footer {
+  height: 100vh;
+  background-color: rgb(51, 51, 51);
+}
+footer > #footer-section {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+}
+footer > #footer-section > h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  line-height: 1.25rem;
+  margin-bottom: 50px !important;
+  margin: 0px 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer > #footer-section > section {
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  margin: 0px 50px;
+}
+footer > #footer-section > section h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer > #footer-section > section > #footer-items {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+footer > #footer-section > section > #footer-items div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer > #footer-section > section > #footer-items div p {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: fit-content;
+}
+footer > #footer-section > section > #footer-items div p:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+footer > #footer-section > section #subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer > #footer-section > section #subscribe > p {
+  font-family: Chronicle Text G1 Roman, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 0.9rem;
+}
+footer > #footer-section > section #subscribe h5 {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  transition: all 0.2s;
+  margin: 5px 0px;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer > #footer-section > section #subscribe > form {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  display: flex;
+  gap: 50px;
+}
+footer > #footer-section > section #subscribe > form input {
+  all: unset;
+  padding-bottom: 5px;
+}
+footer > #footer-section > section #subscribe > form input::placeholder {
+  color: rgb(255, 255, 255);
+  font-family: Chronicle Text G1 Roman, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 0.7rem;
+}
+footer > #footer-section > section #subscribe > form i {
+  color: rgb(255, 255, 255);
+  margin-left: 100px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+footer > #footer-section > section #subscribe #social-media-icons {
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+footer > #footer-section hr {
+  width: 100%;
+  padding: 0 !important;
+  margin-top: 30px;
+}
+footer > #footer-section #footer-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 35%;
+  margin: 0px 50px;
+  padding-top: 30px;
+}
+footer > #footer-section #footer-bottom #privacy-items {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  gap: 20px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+footer > #footer-section #footer-bottom #privacy-items span {
+  display: flex;
+  flex-direction: row;
+}
+footer > #footer-section #footer-bottom #privacy-items svg {
+  margin: 3px;
+}
+footer > #footer-section #footer-bottom p {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
 body {
   background-color: rgb(253, 251, 247);
 }
