@@ -1,0 +1,101 @@
+#modal-sec{
+    width: 700px;
+    height: 300px;
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    z-index: 1000;
+    display: none;
+    background-color: $boxBgColor;
+
+
+    >div{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+        >img{
+            height: 100%;
+            width: 40%;
+            object-fit: cover;
+        }
+        >#text-modal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin:0px 20px;
+
+            p{
+                font-size: .8rem;
+                letter-spacing: .1em;
+                color: $secondTextColor;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            >form{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    font-family: $fontFamily;
+                    color: $textColor;
+                    margin-bottom: 5px;
+                }
+                input{
+                    height: 40px;
+                    padding: 5px;
+                    border-radius: 6px;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                    &::placeholder{
+                        letter-spacing: .1em;
+                        font-size: .8em;               
+                         }
+                }
+                #submit-modal-btn{
+                    margin-top: 10px;
+                    width: 170px;
+                    height: 40px;
+                    background-color: rgb(84, 84, 84);
+                    border: none;
+                    outline: none;
+                    color: $textCreamColor;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: .7em;
+                    letter-spacing: .1em;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover{
+                        background-color: $textColor;
+                    }
+                }
+            }
+            h5{
+                font-weight: 400;
+                letter-spacing: .2em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: $textColor;
+
+            }
+        }
+        >#modal-close-btn{
+           font-size: 1.8rem;
+           color: $secondTextColor;
+           position: absolute;
+           right: 0;
+           top: 2%;
+           cursor: pointer;
+
+           &:hover{
+            color: $textColor;
+           }
+        }
+    }
+
+}
