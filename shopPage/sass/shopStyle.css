@@ -240,12 +240,12 @@ nav #header-img #nav-bar {
   width: 100%;
   padding: 0px 60px;
 }
-nav #header-img #nav-bar > #bottle-logo {
+nav #header-img #nav-bar #bottle-logo {
   height: 65px;
   cursor: pointer;
   transition: all 0.2s;
 }
-nav #header-img #nav-bar > #bottle-logo:hover {
+nav #header-img #nav-bar #bottle-logo:hover {
   opacity: 0.7;
 }
 nav #header-img #nav-bar #ham-menu-icon {
