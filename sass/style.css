@@ -51,7 +51,8 @@ a {
 #modal #modal-box > div:first-of-type > img {
   width: 100%;
   height: 420px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #modal #modal-box > div:nth-of-type(2) {
   width: 60%;
@@ -93,6 +94,10 @@ a {
 #modal #modal-box > div:nth-of-type(2) > form > input:focus {
   border: 1px solid blue;
 }
+#modal #modal-box > div:nth-of-type(2) > form > input::-moz-placeholder {
+  color: #333333;
+  font-size: 1em;
+}
 #modal #modal-box > div:nth-of-type(2) > form > input::placeholder {
   color: #333333;
   font-size: 1em;
@@ -130,7 +135,8 @@ a {
   #modal > #modal-box > div:first-of-type > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #modal > #modal-box > div:nth-of-type(2) {
     width: 100%;
@@ -381,7 +387,8 @@ header #slider-sec #slider-box .slider > div:first-of-type {
 header #slider-sec #slider-box .slider > div:first-of-type img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header #slider-sec #slider-box .slider > div:nth-of-type(2) {
   position: absolute;
@@ -567,7 +574,8 @@ main #shop-sec #shop-slider .slide a h4 {
 main #shop-sec #shop-slider .slide a img {
   width: 90%;
   margin-top: 3em;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #shop-sec #shop-slider::-webkit-scrollbar-thumb {
   opacity: 0;
@@ -684,7 +692,8 @@ main #Blue-Bottle-Coffee-sec > div > a:hover {
 main #Blue-Bottle-Coffee-sec img {
   width: 52%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #instant-coffee-sec {
   width: 100%;
@@ -698,13 +707,15 @@ main #instant-coffee-sec {
 main #instant-coffee-sec > img {
   width: 53%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #instant-coffee-sec #img-min-size {
   display: none;
   width: 53%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #instant-coffee-sec > div {
   width: 40%;
@@ -774,7 +785,8 @@ main #tribune-tower #tower-slider .swiper-slide {
 main #tribune-tower #tower-slider .swiper-slide > img {
   width: 100%;
   height: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #tribune-tower #tower-slider .swiper-slide > div {
   width: 100%;
@@ -858,7 +870,8 @@ main #brew-guides > div > div {
 main #brew-guides > div > div > img {
   width: 50%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #brew-guides > div > div > div {
   width: 47%;
@@ -1004,7 +1017,8 @@ main #brew-guides > div > div > div a:hover {
   main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main #brew-guides-min-size > .swiper > .swiper-wrapper > .swiper-slide > div {
     width: 100%;
@@ -1064,7 +1078,8 @@ main #brew-guides > div > div > div a:hover {
   main #instant-coffee-sec #img-min-size {
     display: inline-block;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main #instant-coffee-sec > div {
     width: 100%;
@@ -1279,6 +1294,9 @@ footer > div > div:nth-of-type(2) > div > div:first-of-type > input {
 }
 footer > div > div:nth-of-type(2) > div > div:first-of-type > input:focus {
   border: 1px solid blue;
+}
+footer > div > div:nth-of-type(2) > div > div:first-of-type > input::-moz-placeholder {
+  color: rgb(255, 255, 255);
 }
 footer > div > div:nth-of-type(2) > div > div:first-of-type > input::placeholder {
   color: rgb(255, 255, 255);

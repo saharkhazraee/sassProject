@@ -28,7 +28,8 @@ ul {
 #modal-sec > div > img {
   height: 100%;
   width: 40%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 nav #offer {
   height: 30px;
@@ -272,6 +273,9 @@ footer > div > div:nth-of-type(2) > div > div:first-of-type > input {
 footer > div > div:nth-of-type(2) > div > div:first-of-type > input:focus {
   border: 1px solid blue;
 }
+footer > div > div:nth-of-type(2) > div > div:first-of-type > input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
 footer > div > div:nth-of-type(2) > div > div:first-of-type > input::placeholder {
   color: rgb(255, 255, 255);
 }
@@ -373,7 +377,8 @@ footer > div > div:nth-of-type(2) > div > div:nth-of-type(3) > i:hover {
   main #instant-coffee-sec #img-min-size {
     display: inline-block;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main #instant-coffee-sec > div {
     width: 100%;
@@ -2277,6 +2282,7 @@ body {
   #coldbrew-section,
   #horizon-section,
   #spring-section {
+    height: -moz-fit-content;
     height: fit-content;
     align-items: center;
   }
