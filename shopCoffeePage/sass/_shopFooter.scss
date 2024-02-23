@@ -1,0 +1,147 @@
+// Footer
+footer{
+    height: 100vh;
+    background-color: rgb(51 51 51);
+
+    >#footer-section{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: $textCreamColor;
+
+        >h2{
+            font-weight: 400;
+            font-size: 1.1rem;
+            letter-spacing: .1em;
+            line-height: 1.25rem;
+            margin-bottom: 50px !important;
+            margin: 0px 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        >section{
+            display: flex;
+            flex-direction: row;
+            gap: 40%;
+            margin: 0px 50px;
+            
+
+            h4{
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: .1em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+           
+            >#footer-items{
+                display: flex;
+                flex-direction: row;
+                gap: 30%;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+
+                    p{
+                        font-size: .8rem;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        transition: $transition;
+                        width: fit-content;
+
+                        &:hover{
+                            border-bottom: 1px solid $textCreamColor;
+                        }
+                    }
+                }
+            }
+            #subscribe{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                >p{
+                    font-family: $fontFamily;
+                    font-size: .9rem;
+                }
+
+                h5{
+                    font-weight: 400;
+                    letter-spacing: .1em;
+                    transition: $transition;
+                    margin: 5px 0px;
+                    cursor: pointer;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   
+                }
+
+                >form{
+                    border-bottom: 1px solid $textCreamColor;
+                    display: flex;
+                    gap: 50px;
+                    input{
+                        all: unset;
+                        padding-bottom: 5px;
+                       
+                        
+                       &::placeholder{
+                        color:$textCreamColor;
+                        font-family: $fontFamily;
+                        font-size: .7rem;
+                       }
+                       }
+                       i{
+                        color: $textCreamColor;
+                        margin-left: 100px;
+                        padding-top: 8px;
+                        cursor: pointer;
+                    }
+                }
+                #social-media-icons{
+                    display: flex;
+                    gap: 30px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        hr{
+            width: 100%;
+            padding: 0 !important;
+            margin-top: 30px;
+        }
+        #footer-bottom{
+            display: flex;
+            flex-direction: row;
+            gap: 35%;
+            margin: 0px 50px;
+            padding-top: 30px;
+            #privacy-items{
+                display: flex;
+                flex-direction: row;
+                font-size: .8rem;
+                gap: 20px;
+                letter-spacing: .1em;
+                white-space: nowrap;
+                cursor: pointer;
+
+                span{
+                    display: flex;
+                    flex-direction: row;
+                }
+                svg{
+                   margin: 3px;
+                }
+            }
+            p{
+                font-size: .7rem;
+                letter-spacing: .1em;
+            }
+
+        }
+
+    }
+}
